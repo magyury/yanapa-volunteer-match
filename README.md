@@ -1,4 +1,4 @@
 yanapa-volunteer-match
 ======================
 
-Web application for Volunteering search engine platform.
+Preparing user login and registration with email
