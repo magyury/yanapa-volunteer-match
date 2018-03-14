@@ -1,0 +1,1 @@
+2018-03-18. Adding user email registration functionallity
