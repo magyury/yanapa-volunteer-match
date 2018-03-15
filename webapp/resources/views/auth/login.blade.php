@@ -60,10 +60,22 @@
                                 </a>
                             </div>
                         </div>
+                            @if (session('activationStatus'))
+                                <div class="alert alert-success">
+                                    {{ trans('auth.activationStatus') }}
+                                </div>
+                            @endif
+
+                            @if (session('activationWarning'))
+                                <div class="alert alert-warning">
+                                    {{ trans('auth.activationWarning') }}
+                                </div>
+                            @endif
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @endsection
