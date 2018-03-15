@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/foo/{name?}', function ($name=null) {
+    return "Welcome to the Community $name!";
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
