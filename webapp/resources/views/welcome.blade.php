@@ -83,10 +83,10 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">Gruppi</a>
+                    <a href="#">Gruppi d'acquisti</a>
                     <a href="#">Deals</a>                                        
                     <a href="#">Come funziona</a>
-                    <a href="https://github.com/magyury/yanapa-volunteer-match">GitHub</a>
+                    <a href="#">Conttataci</a>
                 </div>
             </div>
         </div>
