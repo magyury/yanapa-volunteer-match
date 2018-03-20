@@ -41,7 +41,10 @@
                   <div class="dropdown-menu">
                     
                     <a class="dropdown-item" href="{{ route('home') }}">
-                    <i class="fa d-inline fa-md fa-share-alt"></i> My sharings            
+                      <i class="fa d-inline fa-bg fa-users"></i> I miei gruppi            
+                    </a>
+                    <a class="dropdown-item" href="{{ route('home') }}">
+                      <i class="fa d-inline fa-bg fa-user"></i> Il mio profilo            
                     </a>
                    
                     <div class="dropdown-divider"></div>

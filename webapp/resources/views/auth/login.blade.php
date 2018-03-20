@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="py-5">
+<div class="py-2">
 <div class="container">
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
         
-        <div class="card text-white p-5 bg-primary">
+        <div class="card text-white p-3 bg-primary">
             <div class="card-body">
-                    <h1 class="mb-4">Login</h1>
+                    <h1 class="mb-2">Login</h1>
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
