@@ -70,6 +70,35 @@
       </div>
     </div>
   </nav>
+  <!-- Categories -->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<div class="container">
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		  <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Deals</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Gruppi d'acquisto</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Abbonamenti</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Luxury</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Arte</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Accademy</a>
+			  </li>
+			</ul>
+			  <a class="btn navbar-btn btn-primary" href="#">Altre offerte</a>
+		  </div>
+		</div>
+	  </nav>
     <!-- MAIN PAGE CONTENT -->
     @yield('content')
 </div>
