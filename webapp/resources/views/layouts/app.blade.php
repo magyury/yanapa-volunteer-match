@@ -35,7 +35,8 @@
             <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/login') }}"><i class="fa d-inline fa-lg fa-user-circle-o"></i> Login</a>
             <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/register') }}"> Registrati</a>
           @else 
-              <ul class="nav nav-pills">
+          
+              <ul class="nav nav-pills justify-content-end">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} </a>
                   <div class="dropdown-menu">
@@ -61,14 +62,23 @@
 
                   </div>
                 </li>
+                <!-- Cart -->
+                <li>
+                  <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/home') }}"><i class="fa d-inline fa-lg fas fa-shopping-cart"></i></a>
+                </li>
               </ul>
-                
+
               @endif
-         
+              
           
         @endif
+
+
       </div>
+
+      
     </div>
+    
   </nav>
   <!-- Categories -->
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
