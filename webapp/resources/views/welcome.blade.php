@@ -23,4 +23,14 @@
       </div>
     </div>
 </div>
+
+
+<!-- SECTION SHARED ORDERS -->
+@include('orders_sharings')
+
 @endsection
+
+
+
+
+

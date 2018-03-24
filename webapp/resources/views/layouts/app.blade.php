@@ -111,6 +111,7 @@
 	  </nav>
     <!-- MAIN PAGE CONTENT -->
     @yield('content')
+
 </div>
 
     <!-- Scripts -->
