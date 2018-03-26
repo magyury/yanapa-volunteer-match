@@ -47,9 +47,60 @@
             <a class="carousel-control-prev" href="#carouselOrdersShared" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
             <a class="carousel-control-next" href="#carouselOrdersShared" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
           </div> <!-- ./ CAROUSEL -->
+
         </div>
-        
+      </div> <!-- ./ row -->
+      <!-- LIST OF GROUPS -->
+      <div class="py-5">
+    <div class="container">
+      <div class="row"  style="margin:-40px;">
+        <div class="col-md-12">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://source.unsplash.com/user/brucemars/256x200" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Palestra con sconto fino a €250,00</h4>
+                <p class="card-text">abbonamento in palestra annuale open in tutta Italia.</p>
+                <h5 class="card-title">Virgin Active</h5>
+                  <div class="progress" style="height: 20px; margin-bottom:20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                  </div>
+                 <button type="button" class="btn btn-secondary btn-lg btn-block">Acquista</button>
+              </div>
+              <div class="card-footer"> <small class="text-muted">Creato il 12/01/2018. Scade il 31 marzo.</small> </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://source.unsplash.com/user/samsabourin/256x200" alt="Card image cap">
+              <div class="card-body" >
+                <h4 class="card-title">Palestra con sconto fino a €300,00</h4>
+                <p class="card-text">abbonamento anuale open più lezione con personal trainer.</p>
+                <h5 class="card-title">GetFit</h5>        
+                  <div class="progress" style="height: 20px; margin-bottom:20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                  </div>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Acquista</button>
+              </div>
+              <div class="card-footer"> <small class="text-muted">Creato il 12/01/2018. Scade il 30 aprile.</small> </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://source.unsplash.com/collection/1313008/256x200" alt="Card image cap">
+              <div class="card-body">
+              <h4 class="card-title">Palestra con sconto fino a €200,00</h4>
+              <p class="card-text">abbonamento anuale open in tutti i centri di Milano.</p>
+              <h5 class="card-title">Tonic</h5>
+                <div class="progress" style="height: 20px; margin-bottom:20px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                </div>
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Acquista</button>
+              </div>
+              <div class="card-footer"> <small class="text-muted">Creato il 12/01/2018. Scade il 30 maggio</small> </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div> 
+      <!-- ./ row -->
     </div>
   </div>
 
