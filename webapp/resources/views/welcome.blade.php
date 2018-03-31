@@ -26,7 +26,7 @@
 
 
 <!-- SECTION SHARED ORDERS -->
-@include('orders_sharings')
+@include('groups')
 
 @endsection
 
