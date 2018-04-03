@@ -1,3 +1,6 @@
+<!-- CSS dependencies -->
+
+
 <!-- Styles -->
 <link rel="stylesheet" href="{{ asset('css/groups.css') }}" type="text/css">
 
@@ -5,9 +8,8 @@
     <div class="container">
       <div class="row">
         <div class="align-self-center p-5 col-md-6">
-          <h1 class="mb-4">Shooping Group Experience</h1>
-          <p class="mb-5">Il motivo più importante per i quali le persone rinunciano ad un acquisto é perche i prezzi sono più elevati del previsto è per la rigidità dei prezzi. Con la community crea o unisciti ai gruppi d'acquisti per raggiungire il massimo degli sconti
-            su tutti i prezzi.</p>
+          <h1 class="mb-3">Buyersharing Experience</h1>
+          <p class="mb-3">Nella community di Buyersharing puoi creare o partecipare ai gruppi d'acquisti. Condividi l'esperienza buyesharing e raggiungi il massmio degli sconti su tutti i prezzi.</p>
           <a class="btn btn-lg btn-outline-light" href="#">Unisciti ai Gruppi</a>
         </div>
         <div class="col-md-6 p-0">
@@ -16,26 +18,26 @@
             <div class="carousel-inner" role="listbox">
               <!-- item -->
               <div class="carousel-item active">
-                <img class="d-block img-fluid w-100" style="width:256px; height:360px;" src="{{ asset('img/orders_sharings/303-divaniquattroopiuposti-80284-b-1.jpg') }}" atl="first slide" >
+                <img class="d-block img-fluid w-100" style="width:256px; height:320px;" src="{{ asset('img/orders_sharings/303-divaniquattroopiuposti-80284-b-1.jpg') }}" atl="first slide" >
                 <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.35);">
                   <h5>Divano Grace</h4>
-                  <a href="#">Buyers <span class="badge badge-primary">9</span></a>
+                  <a href="#"><i class="fa d-inline fa-md fa-users"></i> Buyers <span class="badge badge-primary">9</span></a>
                 </div>
               </div> <!-- ./ item -->
                <!-- item -->
               <div class="carousel-item">
-                <img class="d-block img-fluid w-100" style="width:256px; height:360px;" src="{{ asset('img/orders_sharings/199-mobilipercucina-89487-b-1.jpg') }}" data-holder-rendered="true">
+                <img class="d-block img-fluid w-100" style="width:256px; height:320px;" src="{{ asset('img/orders_sharings/199-mobilipercucina-89487-b-1.jpg') }}" data-holder-rendered="true">
                 <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.35);">
                   <h5>Cucina Lain</h4>
-                  <a href="#">Buyers <span class="badge badge-secondary">15</span></a>
+                  <a href="#"><i class="fa d-inline fa-md fa-users"></i> Buyers <span class="badge badge-secondary">15</span></a>
                  </div>
               </div> <!-- ./ item -->
               <!-- item -->
               <div class="carousel-item">
-                <img class="d-block img-fluid w-100" style="width:256px; height:360px;" src="{{ asset('img/orders_sharings/207-pianicottura-88876-b-1.jpg') }}" data-holder-rendered="true">
+                <img class="d-block img-fluid w-100" style="width:256px; height:320px;" src="{{ asset('img/orders_sharings/207-pianicottura-88876-b-1.jpg') }}" data-holder-rendered="true">
                 <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.35);">
                   <h5>RPiano cottura FCH93</h4>
-                  <a href="#">Buyers <span class="badge badge-secondary">7</span></a>
+                  <a href="#"><i class="fa d-inline fa-md fa-users"></i> Buyers <span class="badge badge-secondary">7</span></a>
                 </div>
               </div>
               <!-- ./ item -->
@@ -49,137 +51,167 @@
     </div>  <!-- ./container -->
 </div> <!-- -/py-5 -->
 
+<?php
+
+$buyergroups[] = array(
+            'buyergroup_id' => '000000001',
+            'buyergroup_number' => '000000001',
+            'buyergroup_created_by' => 'Buyersharing',
+            'buyergroup_created_on' => '2018-03-01',
+            'buyergroup_expire_on' => '2018-05-01',
+            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_name' => '303-divaniquattroopiuposti-80284-b-1.jpg',
+            'deal_title' => 'Divano Grace. Euromobil',
+            'deal_description' => 'Forme di lusso, ricche decorazioni e contorni lisci', 
+            'deal_initialprice' => '3250.00', 
+            'deal_finalprice' => '2650.00',
+            'deal_initialdiscount' => round(0.33 * 100,1),
+            'deal_maxdiscount' => round(0.45*100,1),
+            'deal_salestarget' => 1000,
+            'orders' => 350,
+            'salesprogress' => round(350/1000*100),
+            'status' => 'OPEN',
+            );
+$buyergroups[] = array(
+            'buyergroup_id' => '000000002',
+            'buyergroup_number' => '000000002',
+            'buyergroup_created_user' => 'Buyersharing',
+            'buyergroup_created_on' => '2018-03-01',
+            'buyergroup_expire_on' => '2018-05-01',
+            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_name' => '199-mobilipercucina-89487-b-1.jpg',
+            'deal_title' => 'Progetto Lane. Euromobil',
+            'deal_description' => 'Di gusto giovane e con un design rigoroso.', 
+            'deal_initialprice' => '3490.00', 
+            'deal_finalprice' => '2850.00',
+            'deal_initialdiscount' => round(0.2 * 100,1),
+            'deal_maxdiscount' => round(0.24*100,1),
+            'deal_salestarget' => 1000,
+            'orders' => 650,     
+            'salesprogress' => round(650/1000*100),
+            'status' => 'OPEN',
+          );
+$buyergroups[] = array(
+            'buyergroup_id' => '000000003',
+            'buyergroup_number' => '000000003',
+            'buyergroup_created_user' => 'Buyersharing',
+            'buyergroup_created_on' => '2018-03-01',
+            'buyergroup_expire_on' => '2018-05-01',
+            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_name' => '207-pianicottura-88876-b-1.jpg',
+            'deal_title' => 'Progetto Cucina. Euromobil',
+            'deal_description' => 'Design rigoroso.', 
+            'deal_initialprice' => '14790.00', 
+            'deal_finalprice' => '9850.00',
+            'deal_initialdiscount' => round(0.33 * 100,1),
+            'deal_maxdiscount' => round(0.39*100,1),
+            'deal_salestarget' => 10,
+            'orders' => 3,     
+            'salesprogress' => round(3/10*100),
+            'status' => 'OPEN',
+          );
+$buyergroups[] = array(
+            'buyergroup_id' => '000000004',
+            'buyergroup_number' => '000000004',
+            'buyergroup_created_user' => 'Buyersharing',
+            'buyergroup_created_on' => '2018-03-01',
+            'buyergroup_expire_on' => '2018-05-01',
+            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_name' => 'virginactive.jpg',
+            'deal_title' => 'Abbonamento Palestra. Virgin Active',
+            'deal_description' => 'Abbonamento annuale open in tutta italia.', 
+            'deal_initialprice' => '650.00', 
+            'deal_finalprice' => '450.00',
+            'deal_initialdiscount' => round(0.29 * 100,1),
+            'deal_maxdiscount' => round(0.37*100,1),
+            'deal_salestarget' => 1000,
+            'orders' => 450,     
+            'salesprogress' => round(450/1000*100),
+            'status' => 'OPEN',
+          );
+$buyergroups[] = array(
+            'buyergroup_id' => '000000005',
+            'buyergroup_number' => '000000005',
+            'buyergroup_created_user' => 'Buyersharing',
+            'buyergroup_created_on' => '2018-03-01',
+            'buyergroup_expire_on' => '2018-05-01',
+            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_name' => 'getfit.gif',
+            'deal_title' => 'Abbonamento Palestra. GetFit',
+            'deal_description' => 'Abbonamento annuale open più lezione con personal trainer', 
+            'deal_initialprice' => '450.00', 
+            'deal_finalprice' => '380.00',
+            'deal_initialdiscount' => round(0.35 * 100,1),
+            'deal_maxdiscount' => round(0.56*100,1),
+            'deal_salestarget' => 1000,
+            'orders' => 750,     
+            'salesprogress' => round(750/1000*100),
+            'status' => 'OPEN',
+          );
+$buyergroups[] = array(
+            'buyergroup_id' => '000000006',
+            'buyergroup_number' => '000000006',
+            'buyergroup_created_user' => 'Buyersharing',
+            'buyergroup_created_on' => '2018-03-01',
+            'buyergroup_expire_on' => '2018-05-01',
+            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_name' => 'tonicme.jpg',
+            'deal_title' => 'Abbonamento Palestra. Tonic',
+            'deal_description' => 'Abbonamento annuale open Milano', 
+            'deal_initialprice' => '360.00', 
+            'deal_finalprice' => '290.00',
+            'deal_initialdiscount' => round(0.22 * 100,1),
+            'deal_maxdiscount' => round(0.29*100,1),
+            'deal_salestarget' => 1000,
+            'orders' => 600,     
+            'salesprogress' => round(600/1000*100),
+            'status' => 'OPEN',
+          );
+?>
+
 
 <div class="py-3">
   <div class="container">
-    <div class="row mt-2">      
-        
-          <!-- Arredamento -->
-        <div class="col-md-4 mt-1">
+    <div class="row mt-1">     
+@foreach ($buyergroups as $buyergroup)
+
+  <div class="col-md-4 mt-1">
           <div class="card">
-            <img class="card-img-top" style="width:auto; height:200px;" src="{{ asset('img/orders_sharings/303-divaniquattroopiuposti-80284-b-1.jpg') }}" alt="Card image cap">
-            <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">40% sconto</span> </div>
-            <div class="card-body">
-              <h4 class="card-title card-text-deal-truncate">Divano Grace EUR 2650.00</h4>
-              <p class="card-text card-text-deal-truncate">Forme di lusso, ricche decorazioni e contorni lisci</p>
-              <h5 class="card-title">Euromobil</h5>
-                  <div class="row"> <!-- progress bar -->
-                    <div class="col-md-3"> 
-                      <p><small>Buyers</small></p>
+            <img class="card-img-top" style="width:auto; height:200px;" src="{{ $buyergroup['deal_image_path'] }}/{{ $buyergroup['deal_image_name'] }}" alt="deal image">
+            <div class="card-img-overlay"> <span class="badge badge-pill badge-danger"> {{ $buyergroup['deal_maxdiscount'] }}% sconto</span> </div>
+            <div class="card-body px-1">
+              <h3 class="card-title card-text-deal-truncate"style="font-size:16px; font-weight:bolder">{{ $buyergroup['deal_title'] }}</h3>
+              <p class="card-text card-text-deal-truncate" style="font-size:14px;">{{ $buyergroup['deal_description'] }}</p>
+                  <div class="row"> <!-- progress bar -->           
+                    <div class="col-4"> <!-- col price -->
+                        <div class="text-right">
+                          <!-- share -->
+                          <button type="button" class="btn btn-outline-dark btn-sm" style="font-size:12px;width:80%;" ><i class="fa d-inline fa-md fa-share"></i> Share</button>
+                        </div>
+                    </div> <!-- ./col price -->
+                    <div class="col-8"> <!-- col share -->
+                        <div class="text-left">
+                          <p><strike>€{{ $buyergroup['deal_initialprice'] }}</strike> <span class="text-success">&nbsp;<strong>€{{ $buyergroup['deal_finalprice'] }}</strong> </span> </p>
+                        </div>
                     </div>
-                    <div class="col-md-9"> 
+
+                    <div class="col-4">
+                        <!-- buyers -->
+                      <p  class="text-right"><small><i class="fa d-inline fa-md fa-users"></i> Buyers</small></p>
+                    </div>
+                    <div class="col-8"> 
                       <div class="progress" style="height: 20px; margin-bottom:20px;">  
-                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:{{ $buyergroup['salesprogress'] }}%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">{{ $buyergroup['salesprogress'] }}%</div>
                     </div>                    
                   </div> <!-- ./row progress bar-->
                 </div>
-              <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa</button>
-            </div>
-            <div class="card-footer"> <small class="text-muted"> Scade il 31 marzo.</small> </div>
+              <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa al gruppo</button>
+            </div> <!-- ./ card-body -->
+            <div class="card-footer"> <small class="text-muted card-text-deal-truncate" style="font-size:10px;">Scade il 31 marzo. Creato da Buyersharing.</small> </div>
           </div> <!-- ./card -->
         </div>
-
-        <div class="col-md-4 mt-1">
-          <div class="card">
-            <img class="card-img-top" style="width:auto; height:200px;"  src="{{ asset('img/orders_sharings/199-mobilipercucina-89487-b-1.jpg') }}" alt="Card image cap">
-            <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">24% sconto</span> </div>
-            <div class="card-body">
-              <h4 class="card-title card-text-deal-truncate">progetto Lane EUR 3490.00</h4>
-              <p class="card-text card-text-deal-truncate">Di gusto giovane e con un design rigoroso.</p>
-              <h5 class="card-title">Euromobil</h5>
-                <div class="row"> <!-- progress bar -->
-                    <div class="col-md-3"> 
-                      <p><small>Buyers</small></p>
-                    </div>
-                    <div class="col-md-9"> 
-                      <div class="progress" style="height: 20px; margin-bottom:20px;">  
-                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 65%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">65%</div>
-                    </div>                    
-                  </div> <!-- ./row progress bar-->
-                </div>
-              <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa</button>
-            </div>
-            <div class="card-footer"> <small class="text-muted"> Scade il 31 marzo.</small> </div>
-          </div> <!-- ./card -->
-        </div>
-
-        <div class="col-md-4 mt-1">
-          <div class="card">
-            <img class="card-img-top" style="width:auto; height:200px;" src="{{ asset('img/orders_sharings/207-pianicottura-88876-b-1.jpg') }}" alt="Card image cap">
-            <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">35% sconto</span> </div>
-            <div class="card-body">
-              <h4 class="card-title card-text-deal-truncate">Divano Grace EUR 1990.00</h4>
-              <p class="card-text card-text-deal-truncate">Forme di lusso, ricche decorazioni e contorni lisci.</p>
-              <h5 class="card-title">Euromobil</h5>
-                <div class="row"> <!-- progress bar -->
-                    <div class="col-md-3"> 
-                      <p><small>Buyers</small></p>
-                    </div>
-                    <div class="col-md-9"> 
-                      <div class="progress" style="height: 20px; margin-bottom:20px;">  
-                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 40%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">40%</div>
-                    </div>                    
-                  </div> <!-- ./row progress bar-->
-                </div>
-              <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa</button>
-            </div>
-            <div class="card-footer"> <small class="text-muted"> Scade il 31 marzo.</small> </div>
-          </div> <!-- ./card -->
-        </div>
-
-      <!-- Abbonamenti -->
-      <div class="col-md-4 mt-1">
-        <div class="card">
-          <img class="card-img-top" src="https://source.unsplash.com/user/brucemars/256x200" alt="Card image cap">
-          <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">29% sconto</span> </div>
-          <div class="card-body">
-            <h4 class="card-title">Palestra con sconto fino a €250,00</h4>
-            <p class="card-text card-text-deal-truncate">abbonamento in palestra annuale open in tutta Italia.</p>
-            <h5 class="card-title">Virgin Active</h5>
-              <div class="progress" style="height: 20px; margin-bottom:20px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
-              </div>
-            <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa</button>
-          </div>
-          <div class="card-footer"> <small class="text-muted"> Scade il 31 marzo.</small> </div>
-        </div> <!-- ./card -->
-      </div>
-
-      <div class="col-md-4 mt-1">
-        <div class="card">
-          <img class="card-img-top" src="https://source.unsplash.com/user/samsabourin/256x200" alt="Card image cap">
-          <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">35% sconto</span> </div>
-          <div class="card-body" >
-            <h4 class="card-title">Palestra con sconto fino a €300,00</h4>
-            <p class="card-text card-text-deal-truncate">abbonamento anuale open più lezione con personal trainer.</p>
-            <h5 class="card-title">GetFit</h5>        
-              <div class="progress" style="height: 20px; margin-bottom:20px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
-                </div>
-              <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa</button>
-          </div>
-          <div class="card-footer"> <small class="text-muted">Scade il 30 aprile.</small> </div>
-          </div> <!-- ./card -->
-        </div>
-
-      <div class="col-md-4 mt-1">
-          <div class="card">
-            <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">42% sconto</span> </div>
-            <img class="card-img-top" src="https://source.unsplash.com/collection/1313008/256x200" alt="Card image cap">
-            <div class="card-body">
-            <h4 class="card-title">Palestra con sconto fino a €200,00</h4>
-            <p class="card-text card-text-deal-truncate">abbonamento anuale open in tutti i centri di Milano.</p>
-            <h5 class="card-title">Tonic</h5>
-              <div class="progress" style="height: 20px; margin-bottom:20px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
-              </div>
-            <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa</button>
-            </div>
-            <div class="card-footer"> <small class="text-muted">Scade il 30 maggio</small> </div>
-          </div> <!-- ./card -->
-      </div>
-
-    </div> <!-- ./ row -->
+@endforeach
+</div> <!-- ./ row -->
      <!-- ./ abbonamenti -->
   </div> <!-- ./container -->
-</div> <!-- -/py-5 -->
+</div> <!-- -/py -->
