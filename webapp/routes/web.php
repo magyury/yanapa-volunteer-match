@@ -19,6 +19,9 @@ Route::get('/foo/{name?}', function ($name=null) {
     return "Welcome to the Community $name!";
 });
 
+Route::get('/groups/{group_id?}', function ($deal_id) {
+    return view('group');
+});
 
 Auth::routes();
 

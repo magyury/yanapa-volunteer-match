@@ -87,10 +87,7 @@
 		  <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
 			<ul class="navbar-nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Deals</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Gruppi d'acquisto</a>
+				<a class="nav-link" href="{{ url('/') }}">Gruppi di acquisto</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="#">Abbonamenti</a>
@@ -105,7 +102,7 @@
 				<a class="nav-link" href="#">Accademy</a>
 			  </li>
 			</ul>
-			  <a class="btn navbar-btn btn-primary" href="#">Altre offerte</a>
+			
 		  </div>
 		</div>
 	  </nav>

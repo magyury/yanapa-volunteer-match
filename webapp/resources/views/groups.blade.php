@@ -186,7 +186,7 @@ $buyergroups[] = array(
                     <div class="col-4"> <!-- col price -->
                         <div class="text-right">
                           <!-- share -->
-                          <button type="button" class="btn btn-outline-dark btn-sm" style="font-size:12px;width:80%;" ><i class="fa d-inline fa-md fa-share"></i> Share</button>
+                          <a class="btn btn-outline-dark btn-sm" style="font-size:12px;width:80%;"  href="{{ url('/groups/msmsms') }}" role="button"><i class="fa d-inline fa-md fa-share"></i> Share!</a>
                         </div>
                     </div> <!-- ./col price -->
                     <div class="col-8"> <!-- col share -->
@@ -205,7 +205,7 @@ $buyergroups[] = array(
                     </div>                    
                   </div> <!-- ./row progress bar-->
                 </div>
-              <button type="button" class="btn btn-outline-success btn-lg btn-block" style="position: relative;">Partecipa al gruppo</button>
+              <a class="btn btn-outline-success btn-lg btn-block" style="position: relative;"   href="{{ url('/groups/divano-grace-euromobil') }}" role="button"><i class="fa fa-md fa-shopping-cart"></i> Partecipa al gruppo</a>
             </div> <!-- ./ card-body -->
             <div class="card-footer"> <small class="text-muted card-text-deal-truncate" style="font-size:10px;">Scade il 31 marzo. Creato da Buyersharing.</small> </div>
           </div> <!-- ./card -->

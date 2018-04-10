@@ -1,83 +1,25 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.app')
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Buyersharing</title>
-  <!-- PAGE settings -->
-  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
-  <title>Styleguide</title>
-  <meta name="author" content="Buyersharing">
-  <!-- Styles -->
-  <link rel="stylesheet" href="wireframe.css" type="text/css">
-  <script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/circle.css"> </head>
+@section('content')
 
-<body>
-  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+<script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{{ asset('css/circle.css') }}"> </head>
+
+<div class="py-2">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="fa d-inline fa-lg fa-share-alt"></i><b> Buyersharing</b></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-        <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/login') }}"><i class="fa d-inline fa-lg fa-user-circle-o"></i> Login</a>
-        <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/register') }}"> Registrati</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">yury</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">My Dashboard</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Logout</a>
-            </div>
-          </li>
-        </ul>
-        <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/home') }}"><i class="fa d-inline fa-lg fas fa-shopping-cart"></i></a>
-      </div>
-    </div>
-  </nav>
-  <!-- JS libraries -->
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon">xxxx</span> </button>
-      <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Deals</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gruppi d'acquisto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Abbonamenti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Luxury</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Arte</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Accademy</a>
-          </li>
-        </ul>
-        <a class="btn navbar-btn btn-primary" href="#">Altre offerte</a>
-      </div>
-    </div>
-  </nav>
-  <div class="py-2">
-    <div class="container">
+      <!-- Breadcumbs -->
+      <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <ul class=" breadcrumb" style="margin-bottom:0px;margin-top:0px">
+          <ul class=" breadcrumb" style="margin-bottom:0px;margin-top:0px;background-color:RGB(233,234,231)">
             <li class="breadcrumb-item">
-              <a href="#">Home</a>
+              <a href="{{ url('/') }}">Home</a>
             </li>
-            <li class="breadcrumb-item active">Gruppi di acquisto</li>
+            <li class="breadcrumb-item active">Gruppo di acquisto</li>
           </ul>
         </div>
       </div>
+      <!-- Group Details -->
       <div class="row">
         <div class="col-md-12">
           <!--Brand Long Title:  -->
@@ -88,7 +30,7 @@
           <h5>Forme di lusso, ricche decorazioni e contorni lisci. altre informazioni</h5>
         </div>
         <div class="col-md-4 py-1">
-          <!-- Stars --><small><strong>Gruppo di acquisto </strong><span class="h5"> 
+          <!-- Stars --><small><strong>Gruppo </strong><span class="h5"> 
           				<i class="fas fa-star" style="font-size:1,9em; color:gold"></i> 
           				<i class="fas fa-star" style="font-size:1,9em; color:gold"></i> 
           				<i class="fas fa-star" style="font-size:1,9em; color:gold"></i>
@@ -127,9 +69,9 @@
               <h5>Come partecipare:</h5>
             </div>
             <div class="row pb-2 text-center" style="background-color:RGB(233,234,231);">
-              <div class="col-md-4"> <i class="fas fa-users" style="font-size:1,9em; color:gray"></i> Partecipa al gruppo di acquisto</div>
-              <div class="col-md-4"> <i class="fas fa-envelope" style="font-size:1,9em; color:gray"></i> Attendi mail di conferma</div>
-              <div class="col-md-4"> <i class="fas fa-truck" style="font-size:1,9em; color:gray"></i> Ricevi il prodotto</div>
+              <div class="col-md-4"> <i class="fas fa-users" style="font-size:1,9em; color:gray"></i> Partecipa al gruppo di acquisto <i class="fa fa-arrow-circle-right"></i></div>
+              <div class="col-md-4"> <i class="fas fa-envelope" style="font-size:1,9em; color:gray"></i> Attendi mail di conferma <i class="fa fa-arrow-circle-right"></i></i></div>
+              <div class="col-md-4"> <i class="fas fa-truck" style="font-size:1,9em; color:gray"></i> Ricevi il prodotto <i class="far fa-thumbs-up"></i></div>
             </div>
           </div>
         </div>
@@ -158,7 +100,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="px-2"> <i class="far fa-lg fa-clock" style="font-size: 3em;"></i> Scade il 30/03/2018</div>
+              <div class="px-2"> <i class="far fa-lg fa-clock" style="font-size: 2.0em;"></i> Scade il 30/03/2018</div>
             </div>
             <!-- Price and discounts -->
             <div class="col-md-12 ">
@@ -227,11 +169,8 @@
       <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
-        <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-      </pingendo>
+      
     </div>
   </div>
-</body>
 
-</html>
+@endsection
