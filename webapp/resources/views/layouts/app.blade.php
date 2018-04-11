@@ -29,7 +29,11 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
         aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-        @if (Route::has('login'))
+        <form class="form-inline m-0 py-2">
+          <input class="form-control mr-0 " style="width:70%;" type="text" placeholder="">
+          <button class="btn btn-primary" type="submit">Cerca</button>
+        </form>
+          @if (Route::has('login'))
             <!-- Authentication Links -->
           @if (Auth::guest())
             <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/login') }}"><i class="fa d-inline fa-lg fa-user-circle-o"></i> Login</a>
@@ -68,7 +72,7 @@
                 </li>
               </ul>
 
-              @endif
+          @endif
               
           
         @endif
@@ -87,7 +91,7 @@
 		  <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
 			<ul class="navbar-nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="{{ url('/') }}">Gruppi di acquisto</a>
+				<a class="nav-link" href="{{ url('/') }}">Deals</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="#">Abbonamenti</a>
@@ -100,7 +104,8 @@
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="#">Accademy</a>
-			  </li>
+        </li>
+        <a class="btn navbar-btn btn-outline-success" href="#">Crea Gruppo</a>
 			</ul>
 			
 		  </div>
