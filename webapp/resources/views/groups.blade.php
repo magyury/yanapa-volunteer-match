@@ -1,6 +1,3 @@
-<!-- CSS dependencies -->
-
-
 <!-- Styles -->
 <link rel="stylesheet" href="{{ asset('css/groups.css') }}" type="text/css">
 
