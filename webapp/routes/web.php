@@ -23,6 +23,11 @@ Route::get('/groups/{group_id?}', function ($deal_id) {
     return view('group');
 });
 
+Route::get('/create', function () {
+    return view('create-group');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -91,7 +91,7 @@
 		  <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
 			<ul class="navbar-nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="{{ url('/') }}">Deals</a>
+				<a class="nav-link" href="{{ url('/') }}">Gruppi</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="#">Abbonamenti</a>
@@ -105,7 +105,7 @@
 			  <li class="nav-item">
 				<a class="nav-link" href="#">Accademy</a>
         </li>
-        <a class="btn navbar-btn btn-outline-success" href="#">Crea Gruppo</a>
+        <a class="btn navbar-btn btn-danger" href="{{ url('/create') }}">Crea il tuo gruppo</a>
 			</ul>
 			
 		  </div>
@@ -116,6 +116,41 @@
 
 </div>
 
+<!-- Footer -->
+<div class="py-5 bg-dark text-white" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <p class="lead">Sign up to our newsletter for the latest news</p>
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your e-mail here"> </div>
+            <button type="submit" class="btn btn-primary ml-3">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-fw fa-facebook fa-3x text-white"></i>
+          </a>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa fa-fw fa-twitter fa-3x text-white"></i>
+          </a>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-fw fa-instagram text-white fa-3x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3 text-center">
+          <p>© Copyright 2018 Buyersharing - All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -7,7 +7,7 @@
 
 <div class="py-2">
     <div class="container">
-      <!-- Breadcumbs -->
+      <!-- Breadcumbs 
       <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -19,6 +19,8 @@
           </ul>
         </div>
       </div>
+        -->
+
       <!-- Group Details -->
       <div class="row">
         <div class="col-md-12">
@@ -69,9 +71,9 @@
               <h5>Come partecipare:</h5>
             </div>
             <div class="row pb-2 text-center" style="background-color:RGB(233,234,231);">
-              <div class="col-md-4"> <i class="fas fa-users" style="font-size:1,9em; color:gray"></i> Partecipa al gruppo di acquisto <i class="fa fa-arrow-circle-right"></i></div>
-              <div class="col-md-4"> <i class="fas fa-envelope" style="font-size:1,9em; color:gray"></i> Attendi mail di conferma <i class="fa fa-arrow-circle-right"></i></i></div>
-              <div class="col-md-4"> <i class="fas fa-truck" style="font-size:1,9em; color:gray"></i> Ricevi il prodotto <i class="far fa-thumbs-up"></i></div>
+              <div class="col-md-4"> <i class="fas fa-2x fa-users" style="font-size:1,9em;"></i> Partecipa al gruppo di acquisto </div>
+              <div class="col-md-4"> <i class="fas fa-2x fa-envelope" style="font-size:1,9em;"></i> Attendi mail di conferma </div>
+              <div class="col-md-4"> <i class="fas fa-2x fa-truck"></i> Ricevi il prodotto </div>
             </div>
           </div>
         </div>

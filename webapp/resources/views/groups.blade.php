@@ -155,7 +155,7 @@ $buyergroups[] = array(
                     </div>                    
                   </div> <!-- ./row progress bar-->
                 </div>
-              <a class="btn btn-outline-success btn-lg btn-block" style="position: relative;"   href="{{ url('/groups/divano-grace-euromobil') }}" role="button"><i class="fa fa-md fa-shopping-cart"></i> Partecipa al gruppo</a>
+              <a class="btn btn-success btn-lg btn-block" style="position: relative;"   href="{{ url('/groups/divano-grace-euromobil') }}" role="button"><i class="fa fa-md fa-shopping-cart"></i> Partecipa al gruppo</a>
             </div> <!-- ./ card-body -->
             <div class="card-footer"> <small class="text-muted card-text-deal-truncate" style="font-size:10px;">Scade il 31 marzo. Creato da Buyersharing.</small> </div>
           </div> <!-- ./card -->
