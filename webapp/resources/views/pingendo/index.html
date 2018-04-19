@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyersharing</title>
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Styleguide</title>
+  <meta name="author" content="Buyersharing">
+  <!-- Styles -->
+  <link rel="stylesheet" href="wireframe.css" type="text/css">
+  <script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/circle.css">
+  <link rel="stylesheet" href="assets/css/typeahead.suggestions.css"> </head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fa d-inline fa-lg fa-share-alt"></i>
+        <b> Buyersharing</b>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <!-- Search Field  https://twitter.github.io/typeahead.js/js/examples.js -->
+        <form class="form-inline m-0 py-2">
+          <input class="form-control mr-0 " style="width:70%;" type="text" placeholder="">
+          <button class="btn btn-primary" type="submit">Cerca</button>
+        </form>
+        <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/login') }}">
+          <i class="fa d-inline fa-lg fa-user-circle-o"></i> Login</a>
+        <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/register') }}"> Registrati</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">yury</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">My Dashboard</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
+        <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/home') }}">
+          <i class="fa d-inline fa-lg fas fa-shopping-cart"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- JS libraries -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gruppi d'acquisto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Abbonamenti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Luxury</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Arte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accademy</a>
+          </li>
+        </ul>
+        <a class="btn navbar-btn btn-success" href="#">
+          <i class="fas fa-users" style="font-size:1,9em; color:white"></i> crea il tuo gruppo</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Form Group -->
+  <div class="py-5" style="background-image: url('assets/img/community.jpg'); background-size:100% 900px; background-repeat: no-repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="align-self-center col-md-6 text-white">
+          <h1 class="text-center text-md-left display-4">Acquista in gruppo</h1>
+          <p class="lead">perché aspettare se puoi farlo online?</p>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body p-5">
+              <h3 class="pb-3">Crea Gruppo</h3>
+              <form action="https://formspree.io/magyury@hotmail.com" method="post">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input class="form-control" placeholder="Your name, please"> </div>
+                <div class="form-group">
+                  <label>Time</label>
+                  <input type="time" class="form-control"> </div>
+                <div class="form-group">
+                  <label>People</label>
+                  <input type="number" class="form-control" placeholder="2"> </div>
+                <button type="submit" class="btn mt-2 btn-outline-dark">Reserve</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
+  <script src="assets/js/typeahead.bundle.min.js"></script>
+  <script src="assets/js/city.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
