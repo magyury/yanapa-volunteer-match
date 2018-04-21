@@ -105,7 +105,7 @@
 			  <li class="nav-item">
 				<a class="nav-link" href="#">Accademy</a>
         </li>
-        <a class="btn navbar-btn btn-danger" href="{{ url('/create') }}">Crea il tuo gruppo</a>
+        <a class="btn navbar-btn btn-danger" href="{{ url('/new') }}">Crea il tuo gruppo</a>
 			</ul>
 			
 		  </div>

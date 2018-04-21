@@ -23,10 +23,13 @@ Route::get('/groups/{group_id?}', function ($deal_id) {
     return view('group');
 });
 
+Route::get('/new', function () {
+    return view('new-group');
+});
+
 Route::get('/create', function () {
     return view('create-group');
 });
-
 
 Auth::routes();
 

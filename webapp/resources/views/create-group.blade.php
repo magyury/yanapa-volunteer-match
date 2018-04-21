@@ -4,101 +4,47 @@
 
 <script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
-<!-- Cover -->
-<div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url( {{ asset('img/group.jpg') }} );background-size: 100% 100%;background-repeat:no-repeat;">
+<!-- Form Group -->
+<div class="py-4" style="background-image: url({{ asset('img/community.jpg') }}); background-size:100% 900px; background-repeat: no-repeat;" >
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-white mt-5">
-          <h1 class="display-4 text-white">Buyersharing Groups</h1>
-          <p class="">Crea il tuo gruppo e ottieni ottimi prezzi grazie all'elevato numero di acquirenti concentrati in un periodo di tempo limitato. &nbsp;</p>
-          <a href="#register" class="btn btn-lg mt-4 btn-danger">INIZIA</a>
-          <i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
+        <div class="align-self-center col-md-6 text-white">
+          <h1 class="text-center text-md-left display-4">Acquista in gruppo</h1>
+          <p class="lead">perché aspettare se puoi farlo online?</p>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Parallax section -->
-  <div class="py-5 section-parallax" style="background-image: url( {{ asset('img/girl-buying.jpg') }} ); background-size: 100% 100%;background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
-    <div class="container my-5 bg-light p-4">
-      <div class="row mx-auto">
-        <div class="col-md-12">
-          <h1 class="mb-3">Come funziona?</h1>
-          <!-- How to participate -->
-          <div class="col-md-12">
-            <div class="row pb-2 text-center" style="background-color:RGB(233,234,231);font-size: 1.5em;">
-              <div class="col-md-4">
-                <i class="fas fa-search-plus" style="font-size:1,9em;"></i> Sceglie il tuo prodotto e crea il tuo gruppo di acquisto</div>
-              <div class="col-md-4">
-                <i class="fas fa-envelope" style="font-size:1,9em;"></i> Attendi mail di approvazione da parte di Buyersharing</div>
-              <div class="col-md-4">
-                <i class="fas fa-eye" style="font-size:1,9em;"></i> Attivazione del gruppo sulla piattaforma Buyersharing </div>
-            </div>
-          </div>
-          <a class="btn btn-danger btn-lg m-2" href="#register">Crea il tuo gruppo!</a>
-          <br>Tutti i gruppi vengono esaminati e devono essere conformi alle nostre
-          <a href="#">Linee Guida</a>.
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 class="mb-4 text-success">Benefici e caratteristiche</h1>
-          <p class="lead">Noi ti aiuteremo a trovare le persone giuste per raggiungere il tuo obbietivo.
-            <br>Dopo la pubblicazione del tuo gruppo, tutti i nuovi gruppi di Buyersharing vengono annunciati ai membri della community.</p>
-          <div class="row text-left mt-5">
-            <div class="col-md-4 my-3">
-              <div class="row mb-3">
-                <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-envelope"></i>
+        <div class="col-md-6">
+          <div class="card" style="background-color:RGB(232,233,231)">
+            <div class="card-body p-3">
+              <h3 class="pb-3 text-success">Crea un nuovo gruppo</h3>
+              <form action="https://formspree.io/magyury@hotmail.com" method="post">
+                <div class="form-group">
+                  <label>
+                    <i class="fas fa-map-marker"></i> Città</label>
+                  <input class="form-control" placeholder="Nome della tua città"> </div>
+                <div class="form-group">
+                  <label><i class="fab fa-gratipay"></i> Prodotto</label>
+                  <input class="form-control" placeholder="Nome del prodotto che vuoi acquistare"> </div>
+                <div class="form-group">
+                  <label><i class="far fa-comment"></i> Descrizioni del prodotto</label>
+                  <input placeholder="100 caratteri minimo" type="textarea" class="form-control"> </div>
+                <div class="form-group">
+                  <label><i class="far fa-check-circle"></i> Prezzo suggerito</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="price-suggested">EUR</span>
+                    </div>
+                    <input type="number" id="inlineFormInputGroup" placeholder="" min="100" class="form-control"> </div>
                 </div>
-                <div class="align-self-center col-10">
-                  <h5 class="text-secondary">
-                    <b>E-mailing</b>
-                  </h5>
-                </div>
-              </div>
-              <p>L'email con l'annuncio della creazione di un nuovo gruppo viene inviata ai membri della community Buyersharing.</p>
-              <p>L'email con il deal del gruppo viene inviata ai membri che hanno mostrato interesse per deals simili. </p>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="row mb-3">
-                <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-bullhorn"></i>
-                </div>
-                <div class="align-self-center col-10">
-                  <h5 class="text-secondary">
-                    <b>SEO &amp; Web Marketing</b>
-                  </h5>
-                </div>
-              </div>
-              <p>Il tuo gruppo di acquisto verrà pubblicizato su internet e nei social network più usati. Anche e tutti i membri della community avrano la possibilità di condividere direttamente con i membri dei suoi gruppi oppure tramite social network
-                e mail.</p>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="row mb-3">
-                <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-handshake"></i>
-                </div>
-                <div class="align-self-center col-10">
-                  <h5 class="text-secondary">
-                    <b>Trattare con i fornitori</b>
-                  </h5>
-                </div>
-              </div>
-              <p>Qualora il deal desiderato no sia quelli già presenti nella piattaforma, il team di Buyersharing negoziara con il deal con i fornitori per ottenere il massimo delle trattative. Il nostro obbietivo e sempre i prezzi più vataggiosi per tutti
-                i nostri membri.</p>
+                <div class="form-group">
+                  <label><i class="far fa-clock"></i> Data di scadenza </label>
+                  <input class="form-control" type="date" placeholder=""> </div>
+                <button type="submit" class="btn mt-2 btn-success">Accetta e crea</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <br>
-    <br> </div>
     
 @endsection
