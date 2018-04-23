@@ -19,6 +19,10 @@ Route::get('/foo/{name?}', function ($name=null) {
     return "Welcome to the Community $name!";
 });
 
+Route::get('/groups', function () {
+    return view('welcome');
+});
+
 Route::get('/groups/{group_id?}', function ($deal_id) {
     return view('group');
 });

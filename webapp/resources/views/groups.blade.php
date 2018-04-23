@@ -6,9 +6,12 @@
 $buyergroups[] = array(
             'buyergroup_id' => '000000001',
             'buyergroup_number' => '000000001',
-            'buyergroup_created_by' => 'Buyersharing',
+            'buyergroup_created_by_user_id' => 'Buyersharing',
+            'buyergroup_created_by' => 'MyNickname',
             'buyergroup_created_on' => '2018-03-01',
             'buyergroup_expire_on' => '2018-05-01',
+            'buyergroup_min_users' => '500',
+            'buyergroup_max_users' => '2000',
             'deal_image_path' =>  'img/orders_sharings/',
             'deal_image_name' => '303-divaniquattroopiuposti-80284-b-1.jpg',
             'deal_title' => 'Divano Grace. Euromobil',
@@ -19,7 +22,7 @@ $buyergroups[] = array(
             'deal_maxdiscount' => round(0.45*100,1),
             'deal_salestarget' => 1000,
             'orders' => 350,
-            'salesprogress' => round(350/1000*100),
+            'buyergroup_activation_progress' => round(350/500*100), 
             'status' => 'OPEN',
             );
 $buyergroups[] = array(
@@ -38,7 +41,7 @@ $buyergroups[] = array(
             'deal_maxdiscount' => round(0.24*100,1),
             'deal_salestarget' => 1000,
             'orders' => 650,     
-            'salesprogress' => round(650/1000*100),
+            'buyergroup_activation_progress' => round(500/500*100), 
             'status' => 'OPEN',
           );
 $buyergroups[] = array(
@@ -57,7 +60,7 @@ $buyergroups[] = array(
             'deal_maxdiscount' => round(0.39*100,1),
             'deal_salestarget' => 10,
             'orders' => 3,     
-            'salesprogress' => round(3/10*100),
+            'buyergroup_activation_progress' => round(3/10*100),
             'status' => 'OPEN',
           );
 $buyergroups[] = array(
@@ -76,7 +79,7 @@ $buyergroups[] = array(
             'deal_maxdiscount' => round(0.37*100,1),
             'deal_salestarget' => 1000,
             'orders' => 450,     
-            'salesprogress' => round(450/1000*100),
+            'buyergroup_activation_progress' => round(450/1000*100),
             'status' => 'OPEN',
           );
 $buyergroups[] = array(
@@ -95,7 +98,7 @@ $buyergroups[] = array(
             'deal_maxdiscount' => round(0.56*100,1),
             'deal_salestarget' => 1000,
             'orders' => 750,     
-            'salesprogress' => round(750/1000*100),
+            'buyergroup_activation_progress' => round(1000/1000*100),
             'status' => 'OPEN',
           );
 $buyergroups[] = array(
@@ -114,7 +117,7 @@ $buyergroups[] = array(
             'deal_maxdiscount' => round(0.29*100,1),
             'deal_salestarget' => 1000,
             'orders' => 600,     
-            'salesprogress' => round(600/1000*100),
+            'buyergroup_activation_progress' => round(600/1000*100),
             'status' => 'OPEN',
           );
 ?>
@@ -134,9 +137,9 @@ $buyergroups[] = array(
               <p class="card-text card-text-deal-truncate" style="font-size:14px;">{{ $buyergroup['deal_description'] }}</p>
                   <div class="row"> <!-- progress bar -->           
                     <div class="col-4"> <!-- col price -->
-                        <div class="text-right">
+                        <div class="text-left">
                           <!-- share -->
-                          <a class="btn btn-outline-dark btn-sm" style="font-size:12px;width:80%;"  href="{{ url('/groups/msmsms') }}" role="button"><i class="fa d-inline fa-md fa-share"></i> Share!</a>
+                          <a class="btn btn-outline-dark btn-sm" href="{{ url('/groups/msmsms') }}" role="button"><i class="fa d-inline fa-md fa-share"></i> Share!</a>
                         </div>
                     </div> <!-- ./col price -->
                     <div class="col-8"> <!-- col share -->
@@ -147,15 +150,19 @@ $buyergroups[] = array(
 
                     <div class="col-4">
                         <!-- buyers -->
-                      <p  class="text-right"><small><i class="fa d-inline fa-md fa-users"></i> Buyers</small></p>
+                      <p  class="text-left" style="font-size:11px;width:100%;"><i class="fa d-inline fa-md fa-users"></i> Attivazione</p>
                     </div>
                     <div class="col-8"> 
                       <div class="progress" style="height: 20px; margin-bottom:20px;">  
-                      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:{{ $buyergroup['salesprogress'] }}%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">{{ $buyergroup['salesprogress'] }}%</div>
+                        <?php $progressbar_color = ($buyergroup['buyergroup_activation_progress'] < 100? 'warning' : 'success');
+                              $progressbar_striped = ($buyergroup['buyergroup_activation_progress'] < 100? 'progress-bar-striped' : '');
+                              $progressbar_activationstatus = ($buyergroup['buyergroup_activation_progress'] < 100?  $buyergroup['buyergroup_activation_progress'] : 'soglia minima 100');
+                        ?> 
+                      <div class="progress-bar {{$progressbar_striped}} bg-{{$progressbar_color}}" role="progressbar" style="width:{{ $buyergroup['buyergroup_activation_progress'] }}%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"> {{ $progressbar_activationstatus }}%</div>
                     </div>                    
                   </div> <!-- ./row progress bar-->
                 </div>
-              <a class="btn btn-success btn-lg btn-block" style="position: relative;"   href="{{ url('/groups/divano-grace-euromobil') }}" role="button"><i class="fa fa-md fa-shopping-cart"></i> Partecipa al gruppo</a>
+              <a class="btn btn-success btn-lg btn-block" style="position: relative;"   href="{{ url('/groups/divano-grace-euromobil') }}" role="button"><i class="fa fa-md fa-info-circle"></i> Scopri di più</a>
             </div> <!-- ./ card-body -->
             <div class="card-footer"> <small class="text-muted card-text-deal-truncate" style="font-size:10px;">Scade il 31 marzo. Creato da Buyersharing.</small> </div>
           </div> <!-- ./card -->

@@ -91,20 +91,21 @@
 		  <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
 			<ul class="navbar-nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="{{ url('/') }}">Gruppi</a>
+				<a class="nav-link" href="{{ url('/') }}">Gruppi di acquisto</a>
 			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Abbonamenti</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Luxury</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Arte</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Accademy</a>
-        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Categorie </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:rgb(231,233,232);">
+              <a class="dropdown-item" href="#">Abbonamenti</a>
+              <a class="dropdown-item" href="#">Accademy</a>
+              <a class="dropdown-item" href="#">Arte</a>
+              <a class="dropdown-item" href="#">Luxury</a>
+              <div class="dropdown-divider" style="border-color:#808080;"></div>
+              <a class="dropdown-item" href="#">I gruppi più visti</a>
+              <a class="dropdown-item" href="#">I deal più acquistati</a>
+              <a class="dropdown-item" href="#">Nuovi gruppi</a>
+            </div>
+          </li>
         <a class="btn navbar-btn btn-danger" href="{{ url('/new') }}">Crea il tuo gruppo</a>
 			</ul>
 			

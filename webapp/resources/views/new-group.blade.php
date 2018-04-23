@@ -42,7 +42,7 @@
                 <i class="fas fa-eye" style="font-size:1,9em;"></i> Attivazione del gruppo sulla piattaforma Buyersharing </div>
             </div>
           </div>
-          <a class="btn btn-danger btn-lg m-2" href="{{ url('/create') }}">Crea il tuo gruppo GRATIS!</a>
+          <a class="btn btn-danger btn-lg m-2" href="{{ url('/create') }}">Crea il tuo gruppo é GRATIS!</a>
           <br>Tutti i gruppi vengono esaminati e devono essere conformi alle nostre
           <a href="#">Linee Guida</a>.
           <p></p>
