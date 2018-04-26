@@ -12,7 +12,7 @@ $buyergroups[] = array(
             'buyergroup_expire_on' => '2018-05-01',
             'buyergroup_min_users' => '500',
             'buyergroup_max_users' => '2000',
-            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_path' =>  'img/orders_sharings',
             'deal_image_name' => '303-divaniquattroopiuposti-80284-b-1.jpg',
             'deal_title' => 'Divano Grace. Euromobil',
             'deal_description' => 'Forme di lusso, ricche decorazioni e contorni lisci', 
@@ -31,7 +31,7 @@ $buyergroups[] = array(
             'buyergroup_created_user' => 'Buyersharing',
             'buyergroup_created_on' => '2018-03-01',
             'buyergroup_expire_on' => '2018-05-01',
-            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_path' =>  'img/orders_sharings',
             'deal_image_name' => '199-mobilipercucina-89487-b-1.jpg',
             'deal_title' => 'Progetto Lane. Euromobil',
             'deal_description' => 'Di gusto giovane e con un design rigoroso.', 
@@ -50,7 +50,7 @@ $buyergroups[] = array(
             'buyergroup_created_user' => 'Buyersharing',
             'buyergroup_created_on' => '2018-03-01',
             'buyergroup_expire_on' => '2018-05-01',
-            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_path' =>  'img/orders_sharings',
             'deal_image_name' => '207-pianicottura-88876-b-1.jpg',
             'deal_title' => 'Progetto Cucina. Euromobil',
             'deal_description' => 'Design rigoroso.', 
@@ -69,7 +69,7 @@ $buyergroups[] = array(
             'buyergroup_created_user' => 'Buyersharing',
             'buyergroup_created_on' => '2018-03-01',
             'buyergroup_expire_on' => '2018-05-01',
-            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_path' =>  'img/orders_sharings',
             'deal_image_name' => 'virginactive.jpg',
             'deal_title' => 'Abbonamento Palestra. Virgin Active',
             'deal_description' => 'Abbonamento annuale open in tutta italia.', 
@@ -88,7 +88,7 @@ $buyergroups[] = array(
             'buyergroup_created_user' => 'Buyersharing',
             'buyergroup_created_on' => '2018-03-01',
             'buyergroup_expire_on' => '2018-05-01',
-            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_path' =>  'img/orders_sharings',
             'deal_image_name' => 'getfit.gif',
             'deal_title' => 'Abbonamento Palestra. GetFit',
             'deal_description' => 'Abbonamento annuale open più lezione con personal trainer', 
@@ -107,7 +107,7 @@ $buyergroups[] = array(
             'buyergroup_created_user' => 'Buyersharing',
             'buyergroup_created_on' => '2018-03-01',
             'buyergroup_expire_on' => '2018-05-01',
-            'deal_image_path' =>  'img/orders_sharings/',
+            'deal_image_path' =>  'img/orders_sharings',
             'deal_image_name' => 'tonicme.jpg',
             'deal_title' => 'Abbonamento Palestra. Tonic',
             'deal_description' => 'Abbonamento annuale open Milano', 
@@ -156,7 +156,7 @@ $buyergroups[] = array(
                       <div class="progress" style="height: 20px; margin-bottom:20px;">  
                         <?php $progressbar_color = ($buyergroup['buyergroup_activation_progress'] < 100? 'warning' : 'success');
                               $progressbar_striped = ($buyergroup['buyergroup_activation_progress'] < 100? 'progress-bar-striped' : '');
-                              $progressbar_activationstatus = ($buyergroup['buyergroup_activation_progress'] < 100?  $buyergroup['buyergroup_activation_progress'] : 'soglia minima 100');
+                              $progressbar_activationstatus = ($buyergroup['buyergroup_activation_progress'] < 100?  $buyergroup['buyergroup_activation_progress'] : 'soglia minima al 100');
                         ?> 
                       <div class="progress-bar {{$progressbar_striped}} bg-{{$progressbar_color}}" role="progressbar" style="width:{{ $buyergroup['buyergroup_activation_progress'] }}%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"> {{ $progressbar_activationstatus }}%</div>
                     </div>                    
@@ -164,7 +164,7 @@ $buyergroups[] = array(
                 </div>
               <a class="btn btn-success btn-lg btn-block" style="position: relative;"   href="{{ url('/groups/divano-grace-euromobil') }}" role="button"><i class="fa fa-md fa-info-circle"></i> Scopri di più</a>
             </div> <!-- ./ card-body -->
-            <div class="card-footer"> <small class="text-muted card-text-deal-truncate" style="font-size:10px;">Scade il 31 marzo. Creato da Buyersharing.</small> </div>
+            <div class="card-footer"> <small class="text-muted card-text-deal-truncate">Scade il 31 marzo 2018. Creato da Buyersharing.</small> </div>
           </div> <!-- ./card -->
         </div>
 @endforeach
@@ -172,3 +172,6 @@ $buyergroups[] = array(
      <!-- ./ abbonamenti -->
   </div> <!-- ./container -->
 </div> <!-- -/py -->
+
+<!-- Call to action: create a group -->
+@include('make-a-dream')

@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-lg-12 text-white mt-5">
           <h1 class="display-4 text-white">Buyersharing Groups</h1>
-          <p class="">Crea il tuo gruppo e ottieni ottimi prezzi grazie all'elevato numero di acquirenti concentrati in un periodo di tempo limitato. &nbsp;</p>
+          <p class="text-light h3">Comprare in gruppo consente il massimo risparmio a tutti i membri. Non aspettare più <strong>è tutto online</strong>.</p>
           <a class="btn btn-lg mt-4 btn-danger" href="{{ url('/create') }}">INIZIA</a>
           <i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
           <br>

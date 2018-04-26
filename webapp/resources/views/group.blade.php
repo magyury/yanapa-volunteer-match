@@ -4,7 +4,9 @@
 
 <script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{ asset('css/circle.css') }}"> </head>
-
+@section('page-js-files')
+  <script src="{{ asset('js/group.js') }}"></script>
+  @stop
 <div class="py-2">
     <div class="container">
       <!-- Breadcumbs 
@@ -105,11 +107,30 @@
               <div class="px-2"> <i class="far fa-lg fa-clock" style="font-size: 2.0em;"></i> Scade il 30/03/2018</div>
             </div>
             <!-- Price and discounts -->
-            <div class="col-md-12 ">
+            <div class="col-md-12">
               <div class="text-center">
                 <p><span class="text-danger">Sconto 40% </span><strike>€ <span style="font-size: 1.2em;">8920</span></strike> <span class="text-success" style="font-size: 1.5em;">&nbsp;€ <strong>6900</strong> </span> </p>
               </div>
             </div>
+            
+            <div class="col-md-12">
+              <div class="text-center">
+                <!-- quantity -->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn quantity-left-minus btn btn-danger btn-number" type="button" data-type="minus" data-field=""><i class="fas fa-minus"></i></button>
+                    </div>
+                     <input class="form-control text-center text-md-center"  id="quantity" placeholder="" value="1"> 
+                    <div class="input-group-append">
+                      <button class="btn quantity-right-plus btn btn-success btn-number" type="button" data-type="plus" data-field=""><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+                
+                <!-- ./ quantity -->
+              </div>
+            </div>
+
+         
           </div>
           <hr>
           <!-- call to action -->
@@ -168,11 +189,12 @@
           </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
+  
     </div>
   </div>
+  
+<!-- Call to action -->
+@include('make-a-dream')
 
 @endsection
+

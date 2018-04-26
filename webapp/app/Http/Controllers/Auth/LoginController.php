@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/groups';
+    protected $redirectTo = '/groups'; // BS. changed from 'home' to 'groups'
 
     /**
      * Create a new controller instance.

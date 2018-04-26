@@ -15,18 +15,18 @@
         <div class="col-md-6">
           <div class="card" style="background-color:RGB(232,233,231)">
             <div class="card-body p-3">
-              <h3 class="pb-3 text-success">Crea un nuovo gruppo</h3>
+              <h3 class="pb-3 text-success">Crea il tuo gruppo di aquisto</h3>
               <form action="https://formspree.io/magyury@hotmail.com" method="post">
-                <div class="form-group">
-                  <label>
-                    <i class="fas fa-map-marker"></i> Città</label>
-                  <input class="form-control" placeholder="Nome della tua città"> </div>
+                
                 <div class="form-group">
                   <label><i class="fab fa-gratipay"></i> Prodotto</label>
                   <input class="form-control" placeholder="Nome del prodotto che vuoi acquistare"> </div>
+
                 <div class="form-group">
-                  <label><i class="far fa-comment"></i> Descrizioni del prodotto</label>
-                  <input placeholder="100 caratteri minimo" type="textarea" class="form-control"> </div>
+                  <label>
+                    <i class="fas fa-tag"></i> Marchio</label>
+                  <input class="form-control" placeholder="Marchio del prodotto"> </div>
+                
                 <div class="form-group">
                   <label><i class="far fa-check-circle"></i> Prezzo suggerito</label>
                   <div class="input-group">
@@ -35,10 +35,24 @@
                     </div>
                     <input type="number" id="inlineFormInputGroup" placeholder="" min="100" class="form-control"> </div>
                 </div>
+
                 <div class="form-group">
-                  <label><i class="far fa-clock"></i> Data di scadenza </label>
-                  <input class="form-control" type="date" placeholder=""> </div>
-                <button type="submit" class="btn mt-2 btn-success">Accetta e crea</button>
+                  <label><i class="far fa-comment"></i> Descrizioni del prodotto</label>
+                  <textarea placeholder="100 caratteri minimo" class="form-control"> </textarea> </div>
+
+                  <div class="form-group">
+                  <label>
+                    <i class="fas fa-map-marker"></i> Città</label>
+                  <input class="form-control" placeholder="Nome della tua città"> </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Accetto i <a href="#"> termini e condizioni di Buyersharing</a>.
+                    </label>
+                  </div>
+
+                <button type="submit" class="btn mt-2 btn-success">Crea</button>
               </form>
             </div>
           </div>

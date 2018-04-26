@@ -114,6 +114,24 @@
                 <div class="form-group">
                   <label>Data di scadenza </label>
                   <input class="form-control" type="date" placeholder="2"> </div>
+                <!-- quantity -->
+                <div class="form-group">
+                  <label>Quantità </label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn quantity-left-minus btn btn-danger btn-number" type="button" data-type="minus" data-field="">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <input class="form-control" value="1" id="quantity" placeholder="">
+                    <div class="input-group-append">
+                      <button class="btn quantity-right-plus btn btn-success btn-number" type="button" data-type="plus" data-field="">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- ./ quantity -->
+                </div>
                 <button type="submit" class="btn mt-2 btn-success">Accetta e crea</button>
               </form>
             </div>
@@ -130,6 +148,38 @@
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
+  <script>
+    $(document).ready(function(){
+  
+  var quantitiy=0;
+     $('.quantity-right-plus').click(function(e){
+          
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          var quantity = parseInt($('#quantity').val());
+          
+          // If is not undefined
+          $('#quantity').val(quantity + 1);          
+          // Increment
+          
+      });
+  
+       $('.quantity-left-minus').click(function(e){
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          var quantity = parseInt($('#quantity').val());
+          
+          // If is not undefined
+              // Increment
+              if(quantity>1){
+              $('#quantity').val(quantity - 1);
+              }
+       });
+   
+  });
+  </script>
 </body>
 
 </html>
