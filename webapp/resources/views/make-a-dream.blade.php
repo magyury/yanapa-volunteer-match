@@ -7,7 +7,7 @@
               <h1 class="text-light display-4">Realizza il tuo sogno</h1>
               <p class="text-light h3">Hai rinunciato ad un acquisto che ci tieni davvero? Crea il tuo gruppo d'acquisto è GRATIS!.</p>  
               </p>
-              <button type="submit" class="btn btn-lg btn-danger">Scopri di più</button>
+              <a class="btn btn-danger btn-lg m-2" href="{{ url('/new') }}">Scopri di più</a>
             </div>
           </div>
         </div>
