@@ -60,6 +60,19 @@
                                 </a>
                             </div>
                         </div>
+
+                        <!-- login with facebook -->
+                        
+                        <div class="text-center">
+                            <p>OR</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class= "text-center">
+                              <a href="{{url('/redirect')}}" class="btn btn-block btn-lg" style="background-color: #3b5998; color: white;">Login with Facebook</a>
+                            </div>
+                        </div>
+
                             @if (session('activationStatus'))
                                 <div class="alert alert-success">
                                     {{ trans('auth.activationStatus') }}
@@ -79,4 +92,5 @@
     </div>
 </div>
 </div>
+
 @endsection
