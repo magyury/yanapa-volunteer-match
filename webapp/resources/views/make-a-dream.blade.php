@@ -5,9 +5,9 @@
           <div class="row">
             <div class="col-md-12">
               <h1 class="text-light display-4">Realizza il tuo sogno</h1>
-              <p class="text-light h3">Hai rinunciato ad un acquisto che ci tieni davvero? Crea il tuo gruppo d'acquisto è GRATIS!.</p>  
+              <p class="text-light h3">Non c’è ancora il gruppo che fa per te? Crealo ora! é SEMPLICE e GRATIS!</p>  
               </p>
-              <a class="btn btn-danger btn-lg m-2" href="{{ url('/new') }}">Scopri di più</a>
+              <a class="btn btn-danger btn-lg m-2" href="{{ url('/create') }}">Crea il tuo gruppo</a>
             </div>
           </div>
         </div>

@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
-@section('content')
 
-<script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+@section('content')
+@section('page-js-files')
+  
+@stop
 
 <!-- Cover -->
 <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url( {{ asset('img/group.jpg') }} );background-size: 100% 100%; background-repeat: no-repeat; background-position: top; ">
@@ -10,7 +12,7 @@
       <div class="row">
         <div class="col-lg-12 text-white mt-5">
           <h1 class="display-4 text-white">Buyersharing Groups</h1>
-          <p class="text-light h3">Comprare in gruppo consente il massimo risparmio a tutti i membri. Non aspettare più <strong>è tutto online</strong>.</p>
+          <p class="text-light h3">Comprare in gruppo consente il massimo risparmio a tutti i membri, in Buyersharing puoi creare i tuoi gruppi <strong>a GRATIS!</strong></p>
           <a class="btn btn-lg mt-4 btn-danger" href="{{ url('/create') }}">INIZIA</a>
           <i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
           <br>

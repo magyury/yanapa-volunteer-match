@@ -15,7 +15,7 @@
             <div class="col-md-6 text-md-left text-center align-self-center my-5">
               <h1 class="display-4">Buyersharing</h1>
               <p class="lead">Online shopping community</p>
-              <p class="mb-3">Partecipa ai gruppi di acquisti e raggiungi il massimo degli sconti, trova i migliori deal della tua città.</p>
+              <p class="mb-3">La prima piattaforma per creare il tuo gruppo di acquisto. Scopri quanto è conveniente e facile comprare in gruppo.</p>
               <a class="btn btn-lg btn-dark" href="{{ url('/register') }}">Unisciti alla community</a>
             </div>
             <div class="col-md-6">

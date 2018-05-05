@@ -5,12 +5,11 @@
 <script defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
 <!-- Form Group -->
-<div class="py-4" style="background-image: url({{ asset('img/community.jpg') }}); background-size:100% 900px; background-repeat: no-repeat;" >
+<div class="d-flex section-aquamarine py-3 cover" style="background-image: url({{ asset('img/community.jpg') }}); background-size:100% 900px; background-repeat: no-repeat; background-position: top;" >
     <div class="container">
       <div class="row">
         <div class="align-self-center col-md-6 text-white">
-          <h1 class="text-center text-md-left display-4">Acquista in gruppo</h1>
-          <p class="lead">perché aspettare se puoi farlo online?</p>
+          <h1 class="text-center text-md-left display-4">Comprare in gruppo conviene</h1>
         </div>
         <div class="col-md-6">
           <div class="card" style="background-color:RGB(232,233,231)">
@@ -37,22 +36,23 @@
                 </div>
 
                 <div class="form-group">
-                  <label><i class="far fa-comment"></i> Descrizioni del prodotto</label>
+                  <label><i class="far fa-comment"></i> Descrizione del prodotto</label>
                   <textarea placeholder="100 caratteri minimo" class="form-control"> </textarea> </div>
 
                   <div class="form-group">
                   <label>
-                    <i class="fas fa-map-marker"></i> Città</label>
-                  <input class="form-control" placeholder="Nome della tua città"> </div>
+                    <i class="fas fa-heart"></i> Vuoi dare un nome al tuo gruppo?</label>
+                  <input class="form-control" placeholder="es: my dream"> </div>
 
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
-                      Accetto i <a href="#"> termini e condizioni di Buyersharing</a>.
+                      Accetto <a href="#"> termini e condizioni</a>.
                     </label>
                   </div>
-
-                <button type="submit" class="btn mt-2 btn-success">Crea</button>
+                <div class="text-center">
+                <button type="submit" class="btn btn-block mt-2 btn-success">Crea</button>
+              </div>  
               </form>
             </div>
           </div>
@@ -60,5 +60,7 @@
       </div>
     </div>
   </div>
+
+  @include('how-to-create-a-group') 
     
 @endsection

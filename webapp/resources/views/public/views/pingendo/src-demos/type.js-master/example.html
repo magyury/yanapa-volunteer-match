@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated typing effect using typed js</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+	<style type="text/css">
+		.write{
+			font-size: 22px;
+		}
+		.container{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<span class="write"></span>
+	<p></p>
+	<span class="element1 nondisplay"></span>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+        $(".write").typed({
+            strings: ["Welcome to buyersharing!", "Thanks for visit us"],
+			typeSpeed: 1,
+			loop: true, // loop on or off (true or false)
+			
+        });
+	});
+	
+
+setTimeout(function(){
+		$(".element1").css("display", "inherit");
+        $(".element1").typed({
+            strings: ["konquer -r /world"],
+            typeSpeed: 30, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: false, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            callback: function(){ } // call function after typing is done
+        });
+    }, 3000);
+</script>
+
+</body>
+</html>
