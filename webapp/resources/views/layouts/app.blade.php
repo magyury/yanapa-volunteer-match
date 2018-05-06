@@ -20,12 +20,12 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/wireframe.css') }}" type="text/css">
-    
+    <link rel="stylesheet" href="{{ asset('css/offcanvas.css') }}" type="text/css">
+
     @yield('page-style-files')
 </head>
 <body>
     <div id="app">
-
     <nav class="navbar navbar-expand-md bg-primary navbar-dark" style="background: rgb(54,247,89);
 background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%, rgba(95,131,207,1) 100%);">
     <div class="container" >
@@ -85,7 +85,7 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
     </div>
     
   </nav>
-  <!-- Categories -->
+  <!-- Categories 
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark" >
 		<div class="container">
 		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -113,6 +113,27 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
 		  </div>
 		</div>
     </nav>
+
+    -->
+
+    <!-- canvas off -->
+    <div class="nav-scroller bg-white box-shadow">
+      <nav class="nav nav-underline">
+        <a class="nav-link" href="#">
+          Nuovi gruppi
+          <span class="badge badge-pill bg-light align-text-bottom">27</span>
+        </a>
+        <a class="nav-link" href="#">Moto e Scooter</a>
+        <a class="nav-link" href="#">Fitness</a>
+        <a class="nav-link" href="#">Design Arredamento</a>
+        <a class="nav-link" href="#">Ciclismo</a>
+        <a class="nav-link" href="#">Infanzia</a>
+        <a class="nav-link" href="#">Abbonamenti</a>
+        <a class="nav-link btn-danger text-white" href="{{ url('/create') }}">Crea il tuo gruppo</a>
+      </nav>
+    </div>
+
+    <!-- ./ canvas off -->
     
     <!-- MAIN PAGE CONTENT -->
     @yield('content')
