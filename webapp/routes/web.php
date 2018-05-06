@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,7 +43,7 @@ $groups[] = array(
     'group_subscribed_members' => 60,
     'group_max_subscribed_members' => 200,
     'deal_image_path' =>  'img/moto',
-    'deal_image_name' => 'vespa-primavera-laterale-dx.png',
+    'deal_image_name' => 'vespa-primavera-laterale-dx.jpg',
     'deal_title' => 'Scooter 125',
     'deal_description' => 'Un\'icona di stile ad alta tecnologia', 
     'deal_initialprice' => '4.320,00', 
@@ -190,12 +191,24 @@ foreach ($groups as $group){
     return view('group', ['group' => $groupModel]);
 });
 
+Route::get('/confirm', function () {
+    if(Auth::guest())
+    {
+        return redirect('/login');
+    }
+    return view('confirmation');
+});
+
 Route::get('/new', function () {
     return view('new-group');
 });
 
 Route::get('/create', function () {
     return view('create-group');
+});
+
+Route::get('/cookiepolicy', function () {
+    return view('cookiepolicy');
 });
 
 Auth::routes();

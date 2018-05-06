@@ -17,7 +17,8 @@ background: linear-gradient(239deg, rgba(61,65,245,1) 1%, rgba(159,61,245,1) 19%
               <h1 class="display-4">Buyersharing</h1>
               <p class="lead">Online shopping community</p>
               <p class="mb-3">La prima piattaforma per creare il tuo gruppo di acquisto. Scopri quanto è conveniente e facile comprare in gruppo.</p>
-              <a class="btn btn-lg btn-dark" href="{{ url('/register') }}">Unisciti alla community</a>
+              <a class="btn btn-lg text-white" style="background: rgb(188,41,240);
+background: linear-gradient(207deg, rgba(188,41,240,1) 19%, rgba(14,44,237,1) 80%);" href="{{ url('/register') }}">Unisciti alla community</a>
             </div>
             <div class="col-md-6">
               <img class="img-fluid d-block mx-auto" src="{{ asset('img/three-friends-shopping-online-with-credit-card-and-laptop-lying-on-the-floor-at-home.jpg') }}"> </div>

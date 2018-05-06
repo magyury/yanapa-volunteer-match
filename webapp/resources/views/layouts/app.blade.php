@@ -119,17 +119,21 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
     <!-- canvas off -->
     <div class="nav-scroller bg-white box-shadow">
       <nav class="nav nav-underline">
-        <a class="nav-link" href="#">
+        <a class="nav-link text-dark font-weight-bold" style="margin-left:150px;" href="{{ url('/') }}">
           Nuovi gruppi
           <span class="badge badge-pill bg-light align-text-bottom">27</span>
         </a>
-        <a class="nav-link" href="#">Moto e Scooter</a>
-        <a class="nav-link" href="#">Fitness</a>
-        <a class="nav-link" href="#">Design Arredamento</a>
-        <a class="nav-link" href="#">Ciclismo</a>
-        <a class="nav-link" href="#">Infanzia</a>
-        <a class="nav-link" href="#">Abbonamenti</a>
-        <a class="nav-link btn-danger text-white" href="{{ url('/create') }}">Crea il tuo gruppo</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Sport</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Design</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Auto &amp; Moto</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Kids</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Tecnologia</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Servizi</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Casa</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Benessere</a>
+        <a class="nav-link text-dark font-weight-bold" href="#">Altre categorie</a>
+        <a class="nav-link text-white" style="background: rgb(245,61,126);
+background: linear-gradient(207deg, rgba(245,61,126,1) 19%, rgba(111,113,234,1) 67%);" href="{{ url('/create') }}">Crea il tuo gruppo</a>
       </nav>
     </div>
 
@@ -144,36 +148,29 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
   <div class="bg-dark text-white" >
     <div class="container">
       <div class="row">
-        <div class="p-4 col-md-3">
+        <div class="py-4 col-md-3">
           <h2 class="mb-4 text-white">Buyersharing</h2>
-          <p class="text-white">Buyersharing crea gruppi d’acquisto consentendo il massimo risparmio ai membri della Community</p>
-          </br>
-            <a href="#">Termini e condizioni d'uso</a>
-            </br>
-            <a href="#">Cookies</a>
-            </br>
-            <a href="#">Termini e condizioni d'uso</a>
-            </br>
-            <a href="#">Piattaforma ODR per la risoluzione online delle controversie</a>
-        </div>
-        <div class="p-4 col-md-3">
-          <h2 class="mb-4 text-white">Mapsite</h2>
-          <ul class="list-unstyled">
-            <a href="{{ url('/') }}" class="text-white">Home</a>
-            </br>
+          <ul class="list-unstyled">      
             <a href="#" class="text-white">Chi siamo
+            </br>
+            <a href="#" class="text-white">Partners
             </br>
             <a href="#" class="text-white">Jobs</a>
             </br>
             <a href="#" class="text-white">Stampa</a>
+            </ul>
+          
+        </div>
+        <div class="py-4  col-md-3">
+          <h2 class="mb-4 text-white">I tuoi diritti</h2>
+          <ul class="list-unstyled">
+            <a href="#" class="text-white">Assistenza clienti</a>
             </br>
-            <a>Assistenza clienti</a>
-            </br>
-            <a>FAQ</a>
+            <a href="#" class="text-white">FAQ</a>
             </ul>
         </div>
-        <div class="p-4 col-md-3">
-          <h2 class="mb-4">Contact</h2>
+        <div class="py-4 col-md-3">
+          <h2 class="mb-4">Contatti</h2>
           <p>
             <a href="tel:+339 - 388 888 2222" class="text-white">
               <i class="fas mr-3 text-secondary fa-phone"></i>+39</a>&nbsp;- 339 888 2222</p>
@@ -184,22 +181,8 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
           <p>
               <a href="https://goo.gl/maps/YsubV2Gi6vp" class="text-white" target="_blank">
               <i class="fa d-inline mr-3 fa-map-marker text-secondary"></i>Milano, ITALIA</a>
-            <p>
-            </br>
-            <a href="#" class="text-white">Partners</a>
-            </p>
-        </div>
-        <div class="p-4 col-md-3">
-          <h2 class="mb-4 text-light">Iscriviti alla nostra newsletter</h2>
-          <form>
-            <fieldset class="form-group text-white">
-              <label for="exampleInputEmail1">ricevi tutte le novità</label>
-              <input type="email" class="form-control" placeholder="Inserisci la tua mail"> </fieldset>
-            <button type="submit" class="btn btn-outline-secondary">Invia</button>
-          </form>
-          <br>
-          <br>
-          <div class="row">
+
+              <div class="row">
             <div class="col-md-6 align-self-center">
               <a href="https://www.facebook.com/buyersharing/" target="_blank">
                 <i class="fab fa-facebook fa-3x text-white"></i>
@@ -211,11 +194,40 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
               </a>
             </div>
           </div>
+           
+        </div>
+        <div class="py-4 col-md-3">
+          <h2 class="mb-4 text-light">Iscriviti alla newsletter</h2>
+          <form>
+            <fieldset class="form-group text-white">
+              <label for="exampleInputEmail1">ricevi tutte le novità</label>
+              <input type="email" class="form-control" placeholder="Inserisci la tua mail"> </fieldset>
+            <button type="submit" class="btn btn-outline-secondary">Invia</button>
+          </form>
         </div>
       </div>
       <div class="row">
+      <div class="col-md-12">
+      <p class="text-center text-white h4">Buyersharing crea gruppi d’acquisto consentendo il massimo risparmio ai membri della Community</p>      
+      </div>
+      </div>
+      <div class="row">
+     
         <div class="col-md-12 mt-3">
           <p class="text-center text-white">© Copyright 2018 Buyersharing - All rights reserved. </p>
+          <div class="text-center">
+            <a href="#" class="text-white">Termini e condizioni d'uso</a> &nbsp;&nbsp;
+            
+            <a href="{{url('cookiepolicy')}}" class="text-white">Cookies</a>&nbsp;&nbsp;
+            
+            
+            <a href="https://www.iubenda.com/privacy-policy/14283139" class="iubenda-white iubenda-embed " title="Privacy Policy">Privacy Policy</a> <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+            &nbsp;&nbsp;
+            <a href="#" class="text-white">Piattaforma ODR per la risoluzione online delle controversie</a>
+            </br>
+            </br>
+            </br>
+            </div>
         </div>
       </div>
     </div>

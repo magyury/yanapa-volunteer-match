@@ -34,51 +34,46 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
-          <h1 class="mb-4 text-success">Vantaggi dell'acquisto in gruppo </h1>
-          <p class="lead">Noi ti aiuteremo a trovare le persone giuste per raggiungere il tuo obbietivo.
-            <br>Dopo la pubblicazione del tuo gruppo, tutti i nuovi gruppi di Buyersharing vengono annunciati ai membri della community.</p>
+          <h1 class="mb-4 text-success">I vantaggi dei gruppi Buyersharing</h1>
           <div class="row text-left mt-5">
             <div class="col-md-4 my-3">
               <div class="row mb-3">
                 <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-envelope"></i>
+                  <i class="d-block mx-auto fa fa-3x fa-piggy-bank"></i>
                 </div>
                 <div class="align-self-center col-10">
                   <h5 class="text-secondary">
-                    <b>E-mailing</b>
+                    <b>Massimo risparmio</b>
                   </h5>
                 </div>
               </div>
-              <p>L'email con l'annuncio della creazione di un nuovo gruppo viene inviata ai membri della community Buyersharing.</p>
-              <p>L'email con il deal del gruppo viene inviata ai membri che hanno mostrato interesse per deals simili. </p>
+              <p>Grazie all'elevato numero di partecipanti riusciamo a contrattare per Voi le migliori condizioni</p>
             </div>
             <div class="col-md-4 my-3">
               <div class="row mb-3">
                 <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-bullhorn"></i>
+                  <i class="d-block mx-auto fa fa-3x fa-certificate"></i>
                 </div>
                 <div class="align-self-center col-10">
                   <h5 class="text-secondary">
-                    <b>SEO &amp; Web Marketing</b>
+                    <b>Garanzia di qualità</b>
                   </h5>
                 </div>
               </div>
-              <p>Il tuo gruppo di acquisto verrà pubblicizato su internet e nei social network più usati. Anche e tutti i membri della community avrano la possibilità di condividere direttamente con i membri dei suoi gruppi oppure tramite social network
-                e mail.</p>
+              <p>Selezioniamo per Voi solo prodotti originali e di qualità direttamente dai produttori</p>
             </div>
             <div class="col-md-4 my-3">
               <div class="row mb-3">
                 <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-handshake"></i>
+                  <i class="d-block mx-auto fa fa-3x fa-hand-holding-usd"></i>
                 </div>
                 <div class="align-self-center col-10">
                   <h5 class="text-secondary">
-                    <b>Trattare con i fornitori</b>
+                    <b>Bonus</b>
                   </h5>
                 </div>
               </div>
-              <p>Qualora il deal desiderato no sia quelli già presenti nella piattaforma, il team di Buyersharing negoziara con il deal con i fornitori per ottenere il massimo delle trattative. Il nostro obbietivo e sempre i prezzi più vataggiosi per tutti
-                i nostri membri.</p>
+              <p>Condividi i gruppi d'acquisto ed accumuli bonus per il tuo shooping</p>
             </div>
           </div>
         </div>

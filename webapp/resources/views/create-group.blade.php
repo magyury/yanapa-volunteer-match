@@ -9,12 +9,12 @@
     <div class="container">
       <div class="row">
         <div class="align-self-center col-md-6 text-white">
-          <h1 class="text-center text-md-left display-4">Comprare in gruppo conviene</h1>
+          <h1 class="text-center text-md-left display-4">Perchè comprare da solo se puoi farlo in gruppo?</h1>
         </div>
         <div class="col-md-6">
           <div class="card" style="background-color:RGB(232,233,231)">
             <div class="card-body p-3">
-              <h3 class="pb-3 text-success">Crea il tuo gruppo di aquisto</h3>
+              <h4 class="pb-3 text-success">Crea il tuo gruppo senza nessun impegno</h4>
               <form action="https://formspree.io/magyury@hotmail.com" method="post">
                 
                 <div class="form-group">

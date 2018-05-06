@@ -100,10 +100,20 @@
               <h4> L'Offerta comprende</h4>
               <hr>
               <div>
-                <p>Caldi divani oversize come moderne stuoie senza tempo e senza confini territoriali trovano il loro posto ideale nell’habitat moderno delle nostre case e negli ambienti oggi più frequentati. Sedute ampie con morbida imbottitura in piuma
-                  nelle due versioni da 100 e 130 cm. combinate in una vasta gamma di soluzioni. Isole, penisole, elementi centrali e laterali con e senza braccioli su cui gettare grandi cuscini dai tessuti originali e colorati. Elementi decorativi
-                  che esaltano le linee morbide di questi divani sfoderabili che possono mutare aspetto insieme alla nostra creatività.</p>
-                <p> La spedizione é gratuita. </p>
+                <p>
+                    Nell’abbonamento sono compresi: accesso a sala pesi, piscina, SPA (dove presente) e a tutti i corsi.
+                    Non ci sono limitazioni di orario.  La quota di attivazione e la relativa assicurazione sono già incluse nel prezzo.
+                    È necessario il certificato di idoneità all’attività sportiva non agonistica a carico del cliente (da depositare al club in originale entro 7 giorni dall’attivazione dell’abbonamento).                    
+                    </br>
+                    </br>
+                    <span class="h4">Regolamento</span>
+                    </br>
+Coupon valido solo per nuovi abbonati o per persone non abbonate alla palestra da almeno 24 mesi o che non hanno richiesto l’adesione a altre formule promozionali attive nel club
+</br><strong>Validità</strong>: abbonamento attivabile entro 3 mesi dalla data di ricevimento del coupon
+</br><strong>Limiti</strong>: max 1 abbonamento a persona
+
+</p>
+              
               </div>
             </div>
           </div>
@@ -213,7 +223,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="text-center py-1">
-                <a href="#" class="btn btn-success box-shadow" style="width:80%; font-size:24px;"><i class="fas fa-shopping-cart" style="font-size:1,9em; color:gold"></i> Partecipa</a>
+                <a href="{{url('/confirm')}}" class="btn btn-success box-shadow" style="width:80%; font-size:24px;"><i class="fas fa-shopping-cart" style="font-size:1,9em; color:gold"></i> Partecipa</a>
               </div>
               
               <div class="text-center py-1">
@@ -235,7 +245,7 @@
 
               <!-- Terms -->
               <div class="col-md-12">
-                <h4>Condizioni</h4>
+                <h4>Termini e condizioni Buyersharing</h4>
                 <hr>
                 <p> <small>
                   Il "Gruppo di Acquisto" è una modalità di acquisto che consente di ottenere ottimi prezzi, grazie all'elevato numero di acquirenti concentrati in un periodo di tempo limitato.
@@ -243,8 +253,8 @@
                 <p> <small>
                   Con i Gruppi di Acquisto di Buyersharing é necessario raggiungere la soglia minima di acquirenti per avere diritto a ricevere il prodotto. Se invece la soglia minima non viene raggiunta, il Gruppo di Acquisto potrebbe essere annullato.
                   Il Gruppo di Acquisto si chiude al raggiungimento della soglia massima di acquirenti o alla data di scandenza indicata in ogni deal.
-                  Nessun addebito verrà effettuato in caso di annullamento del Gruppo di Acquisto.
-                  </small> </p>
+                  Nessun addebito verrà effettuato in caso di annullamento del Gruppo di Acquisto. 
+                  </small> </p> Per maggiori informazioni leggi i<a href=""> termini e condizioni d'uso</a>
               </div>
               <!-- ./ terms -->
             </div>
