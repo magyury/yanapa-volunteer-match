@@ -46,7 +46,7 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
           
               <ul class="nav nav-pills justify-content-end">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} </a>
+                  <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} </a>
                   <div class="dropdown-menu">
                     
                     <a class="dropdown-item" href="{{ route('home') }}">
@@ -72,7 +72,7 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
                 </li>
                 <!-- Cart -->
                 <li>
-                  <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/home') }}"><i class="fa d-inline fa-lg fas fa-shopping-cart"></i></a>
+                  <a class="btn navbar-btn ml-2 text-white btn-dark" href="{{ url('/home') }}"><i class="fa d-inline fa-lg fas fa-shopping-cart"></i></a>
                 </li>
               </ul>
 
