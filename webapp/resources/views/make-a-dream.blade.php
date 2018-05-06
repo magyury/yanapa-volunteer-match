@@ -1,4 +1,5 @@
-<div class="py-5 text-center bg-success" style="background-size:cover;" >
+<div class="py-5 text-center bg-success" style="background-size:cover; background: rgb(61,65,245);
+background: linear-gradient(90deg, rgba(61,65,245,1) 19%, rgba(147,9,245,1) 83%);" >
     <div class="container">
       <div class="row">
         <div class="col-md-12">

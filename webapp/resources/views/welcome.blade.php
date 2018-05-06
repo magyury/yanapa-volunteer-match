@@ -9,7 +9,8 @@
 @endif
 
 @if (Auth::guest())
-    <div class="pt-3 text-white bg-primary">
+    <div class="pt-3 text-white bg-primary" style="background: rgb(61,65,245);
+background: linear-gradient(239deg, rgba(61,65,245,1) 1%, rgba(159,61,245,1) 19%, rgba(240,163,86,1) 45%, rgba(111,113,234,1) 67%, rgba(223,234,111,1) 83%, rgba(111,113,234,1) 94%);">
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-md-left text-center align-self-center my-5">

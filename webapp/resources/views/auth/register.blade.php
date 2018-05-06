@@ -64,11 +64,24 @@
 
                         <div class="form-group">
                             
-                                <button type="submit" class="btn btn-secondary">
+                                <button type="submit" class="btn btn-success">
                                     Register
                                 </button>
                          
                         </div>
+
+                        <!-- login with facebook -->
+                        
+                        <div class="text-center">
+                            <p>Oppure</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class= "text-center">
+                              <a href="{{url('/redirect')}}" class="btn btn-block btn-lg" style="background-color: #3b5998; color: white;">Iscriviti con Facebook</a>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>

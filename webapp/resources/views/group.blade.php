@@ -69,7 +69,7 @@
                   <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                     <?php $deal_image_fullname = $group["deal_image_path"] . DIRECTORY_SEPARATOR . $group["deal_image_name"] ; ?>
-                      <img class="d-block img-fluid" data-holder-rendered="true" src='{{asset("$deal_image_fullname")}}' style="width: 100%; height: 305px;"> </div>
+                      <img class="d-block img-fluid" data-holder-rendered="true" src='{{asset("$deal_image_fullname")}}' style="width: 100%; height: 100%;"> </div>
                     <!-- two more images 
                     <div class="carousel-item">
                       <img class="d-block img-fluid" src="image_product_two.jpg" data-holder-rendered="true" style="height:280px;"> </div>

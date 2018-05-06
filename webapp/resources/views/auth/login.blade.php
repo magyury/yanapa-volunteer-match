@@ -51,7 +51,7 @@
 
                         <div class="form-group">
                             <div class="col-md-3">
-                                <button type="submit" class="btn btn-secondary">
+                                <button type="submit" class="btn btn-success">
                                     Login
                                 </button>
 
@@ -60,30 +60,31 @@
                                 </a>
                             </div>
                         </div>
-
-                        <!-- login with facebook -->
                         
+                        <!-- login with facebook -->
                         <div class="text-center">
-                            <p>OR</p>
+                            <p>Oppure</p>
                         </div>
                         
                         <div class="form-group">
                             <div class= "text-center">
-                              <a href="{{url('/redirect')}}" class="btn btn-block btn-lg" style="background-color: #3b5998; color: white;">Login with Facebook</a>
+                              <a href="{{url('/redirect')}}" class="btn btn-block btn-lg" style="background-color: #3b5998; color: white;">Accedi con Facebook</a>
                             </div>
                         </div>
+                        <!-- ./login -->
 
-                            @if (session('activationStatus'))
-                                <div class="alert alert-success">
-                                    {{ trans('auth.activationStatus') }}
-                                </div>
-                            @endif
+                        @if (session('activationStatus'))
+                            <div class="alert alert-success">
+                                {{ trans('auth.activationStatus') }}
+                            </div>
+                        @endif
 
-                            @if (session('activationWarning'))
-                                <div class="alert alert-warning">
-                                    {{ trans('auth.activationWarning') }}
-                                </div>
-                            @endif
+                        @if (session('activationWarning'))
+                            <div class="alert alert-warning">
+                                {{ trans('auth.activationWarning') }}
+                            </div>
+                        @endif
+
                     </form>
                 
             </div> <!-- ./ card-body -->

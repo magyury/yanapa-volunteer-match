@@ -29,19 +29,19 @@
     <nav class="navbar navbar-expand-md bg-primary navbar-dark" style="background: rgb(54,247,89);
 background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%, rgba(95,131,207,1) 100%);">
     <div class="container" >
-      <a class="navbar-brand" href="{{ url('/') }}"><i class="fa d-inline fa-lg fa-share-alt"></i><b>  B U Y E R S H A R I N G</b></a>
+      <a class="navbar-brand" href="{{ url('/') }}"><i class="fa d-inline fa-lg fa-share-alt"></i><b>  Buyersharing</b></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
         aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <form class="form-inline m-0 py-2">
           <input class="form-control mr-0 " style="width:70%;" type="text" placeholder="">
-          <button class="btn btn-primary" type="submit">Cerca</button>
+          <button class="btn btn-dark text-sm-left" type="submit">Cerca</button>
         </form>
           @if (Route::has('login'))
             <!-- Authentication Links -->
           @if (Auth::guest())
-            <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/login') }}"><i class="fa fa-lg fa-user-circle"></i> Login</a>
-            <a class="btn navbar-btn ml-2 text-white btn-secondary" href="{{ url('/register') }}"> Registrati</a>
+            <a class="btn navbar-btn ml-2 text-white" href="{{ url('/login') }}"><i class="fa fa-lg fa-user-circle"></i> Login</a>
+            <a class="btn navbar-btn ml-2 text-white" href="{{ url('/register') }}"> Registrati</a>
           @else 
           
               <ul class="nav nav-pills justify-content-end">
@@ -86,17 +86,16 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
     
   </nav>
   <!-- Categories -->
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background: rgb(22,168,98);
-  background: linear-gradient(140deg, rgba(22,168,98,1) 40%, rgba(25,190,72,1) 59%, rgba(40,231,78,1) 85%, rgba(233,232,240,1) 100%);">
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark" >
 		<div class="container">
 		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 		  <div class="collapse navbar-collapse text-center justify-content-left" id="navbar3SupportedContent">
 			<ul class="navbar-nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="{{ url('/') }}">GRUPPI DI ACQUISTO</a>
+				<a class="nav-link  text-white" href="{{ url('/') }}">GRUPPI DI ACQUISTO</a>
 			  </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ALTRE CATEGORIE </a>
+            <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ALTRE CATEGORIE </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:rgb(231,233,232);">
               <a class="dropdown-item" href="#">Abbonamenti</a>
               <a class="dropdown-item" href="#">Accademy</a>
@@ -120,37 +119,87 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
 
 </div>
 
-<!-- Footer -->
-<div class="py-5 bg-dark text-white" style="background: rgb(22,168,98);
-background: linear-gradient(140deg, rgba(22,168,98,1) 40%, rgba(25,190,72,1) 59%, rgba(40,231,78,1) 85%, rgba(233,232,240,1) 100%);">
+  <!-- footer -->
+  <div class="bg-dark text-white" >
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
-          <p class="lead">Iscriviti alla nostra newsletter</p>
-          <form class="form-inline">
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Your e-mail here"> </div>
-            <button type="submit" class="btn btn-primary ml-3">Invia</button>
+        <div class="p-4 col-md-3">
+          <h2 class="mb-4 text-white">Buyersharing</h2>
+          <p class="text-white">Buyersharing crea gruppi d’acquisto consentendo il massimo risparmio ai membri della Community</p>
+          </br>
+            <a href="#">Termini e condizioni d'uso</a>
+            </br>
+            <a href="#">Cookies</a>
+            </br>
+            <a href="#">Termini e condizioni d'uso</a>
+            </br>
+            <a href="#">Piattaforma ODR per la risoluzione online delle controversie</a>
+        </div>
+        <div class="p-4 col-md-3">
+          <h2 class="mb-4 text-white">Mapsite</h2>
+          <ul class="list-unstyled">
+            <a href="{{ url('/') }}" class="text-white">Home</a>
+            </br>
+            <a href="#" class="text-white">Chi siamo
+            </br>
+            <a href="#" class="text-white">Jobs</a>
+            </br>
+            <a href="#" class="text-white">Stampa</a>
+            </br>
+            <a>Assistenza clienti</a>
+            </br>
+            <a>FAQ</a>
+            </ul>
+        </div>
+        <div class="p-4 col-md-3">
+          <h2 class="mb-4">Contact</h2>
+          <p>
+            <a href="tel:+339 - 388 888 2222" class="text-white">
+              <i class="fas mr-3 text-secondary fa-phone"></i>+39</a>&nbsp;- 339 888 2222</p>
+          <p>
+            <a href="mailto:info@pingendo.com" class="text-white">
+              <i class="far mr-3 text-secondary fa-envelope"></i>info@buyersharing.com</a>
+          </p>
+          <p>
+              <a href="https://goo.gl/maps/YsubV2Gi6vp" class="text-white" target="_blank">
+              <i class="fa d-inline mr-3 fa-map-marker text-secondary"></i>Milano, ITALIA</a>
+            <p>
+            </br>
+            <a href="#" class="text-white">Partners</a>
+            </p>
+        </div>
+        <div class="p-4 col-md-3">
+          <h2 class="mb-4 text-light">Iscriviti alla nostra newsletter</h2>
+          <form>
+            <fieldset class="form-group text-white">
+              <label for="exampleInputEmail1">ricevi tutte le novità</label>
+              <input type="email" class="form-control" placeholder="Inserisci la tua mail"> </fieldset>
+            <button type="submit" class="btn btn-outline-secondary">Invia</button>
           </form>
-        </div>
-        <div class="col-4 col-md-1 align-self-center">
-          <a href="https://www.facebook.com/buyersharing/" target="_blank">
-            <i class="fab fa-facebook fa-3x text-white"></i>
-          </a>
-        </div>
-        <div class="col-4 col-md-1 align-self-center">
-          <a href="https://www.instagram.com/buyersharing/" target="_blank">
-            <i class="fab fa-instagram text-white fa-3x"></i>
-          </a>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-6 align-self-center">
+              <a href="https://www.facebook.com/buyersharing/" target="_blank">
+                <i class="fab fa-facebook fa-3x text-white"></i>
+              </a>
+            </div>
+            <div class="col-md-6 align-self-center">
+              <a href="https://www.instagram.com/buyersharing/" target="_blank">
+                <i class="fab fa-instagram text-white fa-3x"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 mt-3 text-center">
-          <p>© Copyright 2018 Buyersharing - All rights reserved.</p>
+        <div class="col-md-12 mt-3">
+          <p class="text-center text-white">© Copyright 2018 Buyersharing - All rights reserved. </p>
         </div>
       </div>
     </div>
   </div>
+  <!-- ./ footer -->
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
