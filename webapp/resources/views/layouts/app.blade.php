@@ -23,6 +23,33 @@
     <link rel="stylesheet" href="{{ asset('css/offcanvas.css') }}" type="text/css">
 
     @yield('page-style-files')
+
+    <!-- Cookie consent https://cookieconsent.insites.com/download/ -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#237afc"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#237afc"
+        }
+      },
+      "position": "top",
+      "content": {
+        "message": "Questo sito utilizza cookie per il funzionamento di alcuni servizi. Utilizzando questi servizi, accetti l'utilizzo dei cookie da parte nostra. ",
+        "dismiss": "OK",
+        "link": "Dettagli",
+        "href": "http://landings.buyersharing.com/cookiepolicy"
+      }
+    })});
+    </script>
+    <!-- ./ cookie consent -->
+
 </head>
 <body>
     <div id="app">
@@ -116,10 +143,11 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
 
     -->
 
+  <div class="container">
     <!-- canvas off -->
     <div class="nav-scroller bg-white box-shadow">
       <nav class="nav nav-underline">
-        <a class="nav-link text-dark font-weight-bold" style="margin-left:150px;" href="{{ url('/') }}">
+        <a class="nav-link text-dark font-weight-bold" href="{{ url('/') }}">
           Nuovi gruppi
           <span class="badge badge-pill bg-light align-text-bottom">27</span>
         </a>
@@ -136,8 +164,8 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
 background: linear-gradient(207deg, rgba(245,61,126,1) 19%, rgba(111,113,234,1) 67%);" href="{{ url('/create') }}">Crea il tuo gruppo</a>
       </nav>
     </div>
-
     <!-- ./ canvas off -->
+</div>
     
     <!-- MAIN PAGE CONTENT -->
     @yield('content')
