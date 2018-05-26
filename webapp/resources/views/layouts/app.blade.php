@@ -21,7 +21,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/wireframe.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/offcanvas.css') }}" type="text/css">
-
+    <link rel="stylesheet" href="{{ asset('css/logo.css') }}" type="text/css">
     @yield('page-style-files')
 
     <!-- Cookie consent https://cookieconsent.insites.com/download/ -->
@@ -53,10 +53,10 @@
 </head>
 <body>
     <div id="app">
-    <nav class="navbar navbar-expand-md bg-primary navbar-dark" style="background: rgb(54,247,89);
-background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%, rgba(95,131,207,1) 100%);">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark" style="background: rgb(121,159,141);
+    background: linear-gradient(140deg, rgba(121,159,141,1) 4%, rgba(80,158,95,1) 32%, rgba(32,226,95,1) 66%, rgba(22,168,98,1) 97%);">
     <div class="container" >
-      <a class="navbar-brand" href="{{ url('/') }}"><i class="fa d-inline fa-lg fa-share-alt"></i><b>  Buyersharing</b></a>
+    <img class="navbar-brand logo" src="{{ asset('img/logo.png') }}" alt="logo" href="{{ url('/') }}">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
         aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
@@ -160,8 +160,8 @@ background: linear-gradient(90deg, rgba(54,247,89,1) 0%, rgba(187,12,230,1) 50%,
         <a class="nav-link text-dark font-weight-bold" href="#">Casa</a>
         <a class="nav-link text-dark font-weight-bold" href="#">Benessere</a>
         <a class="nav-link text-dark font-weight-bold" href="#">Altre categorie</a>
-        <a class="nav-link text-white" style="background: rgb(245,61,126);
-background: linear-gradient(207deg, rgba(245,61,126,1) 19%, rgba(111,113,234,1) 67%);" href="{{ url('/create') }}">Crea il tuo gruppo</a>
+        <a class="nav-link text-white" style="background: rgb(57,41,240);
+        background: linear-gradient(207deg, rgba(57,41,240,1) 9%, rgba(41,239,240,1) 44%, rgba(14,44,237,1) 80%);" href="{{ url('/create') }}">Crea il tuo gruppo</a>
       </nav>
     </div>
     <!-- ./ canvas off -->

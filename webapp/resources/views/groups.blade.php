@@ -201,7 +201,8 @@ $groups[] = array(
                   </div> <!-- ./row group activation progress-->
                 </div>
               <?php $group_url = '/groups' . DIRECTORY_SEPARATOR . $group['group_name']; ?>  
-              <a class="btn btn-success btn-lg btn-block" style="position: relative;"   href="{{ url($group_url) }}" role="button"><i class="fa fa-md fa-info-circle"></i> Scopri di più</a>
+              <a class="btn btn-success btn-lg btn-block" style="position: relative; background: rgb(22,168,98);
+background: linear-gradient(140deg, rgba(22,168,98,1) 4%, rgba(25,190,72,1) 38%, rgba(40,231,78,1) 51%, rgba(50,182,93,1) 69%, rgba(22,168,98,1) 97%);"   href="{{ url($group_url) }}" role="button"><i class="fa fa-md fa-info-circle"></i> Scopri di più</a>
             </div> <!-- ./ card-body -->
             <div class="card-footer"> <small class="text-muted card-text-deal-truncate">Scade il 31 marzo 2018. Creato da {{ $group['group_created_by_user'] }}.</small> </div>
           </div> <!-- ./card -->
