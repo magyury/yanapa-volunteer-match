@@ -21,7 +21,9 @@ background: linear-gradient(239deg, rgba(61,65,245,1) 1%, rgba(159,61,245,1) 19%
 background: linear-gradient(207deg, rgba(188,41,240,1) 19%, rgba(14,44,237,1) 80%);" href="{{ url('/register') }}">Unisciti alla community</a>
             </div>
             <div class="col-md-6">
-              <img class="img-fluid d-block mx-auto" src="{{ asset('img/three-friends-shopping-online-with-credit-card-and-laptop-lying-on-the-floor-at-home.jpg') }}"> </div>
+            <div class="embed-responsive embed-responsive-4by3  rounded">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yGPmoTJDRSk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
           </div>
         </div>
     </div>
